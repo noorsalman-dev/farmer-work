@@ -1,0 +1,62 @@
+[gd_scene load_steps=7 format=3 uid="uid://nmqujuslov6c"]
+
+[ext_resource type="Script" uid="uid://c2kmyo3xo7jmy" path="res://script/chicen.gd" id="1_forby"]
+[ext_resource type="Texture2D" uid="uid://uskfs601fo0y" path="res://assets/Cute_Fantasy_Free/Animals/Chicken/Chicken.png" id="2_forby"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wl2hm"]
+atlas = ExtResource("2_forby")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_foocg"]
+atlas = ExtResource("2_forby")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8rdfv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wl2hm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_foocg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dmuiv"]
+radius = 4.0
+
+[node name="chicen" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_forby")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 18.0
+one_shot = true
+
+[node name="Timer2" type="Timer" parent="."]
+wait_time = 40.0
+one_shot = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, -5)
+sprite_frames = SubResource("SpriteFrames_8rdfv")
+autoplay = "default"
+frame_progress = 0.724792
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -3)
+shape = SubResource("CircleShape2D_dmuiv")
+
+[node name="Timer3" type="Timer" parent="."]
+wait_time = 20.0
+one_shot = true
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_shape_entered" from="." to="." method="_on_area_shape_entered"]
+[connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer2" to="." method="_on_timer_2_timeout"]
+[connection signal="timeout" from="Timer3" to="." method="_on_timer_3_timeout"]

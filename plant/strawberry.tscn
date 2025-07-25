@@ -1,0 +1,152 @@
+[gd_scene load_steps=14 format=3 uid="uid://dlsj1udbikxui"]
+
+[ext_resource type="Script" uid="uid://bj18m4o425fpu" path="res://plant/strawberry.gd" id="1_mykw5"]
+[ext_resource type="Texture2D" uid="uid://tktbl6twu1ra" path="res://assets/Farm RPG FREE 16x16 - Tiny Asset Pack/Objects/Spring Crops.png" id="2_6aabu"]
+
+[sub_resource type="Animation" id="Animation_dmuiv"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_usd8m"]
+resource_name = "new_animation"
+length = 18.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0261521, 17.8667, 17.9667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1e-05, 1), Vector2(1e-05, 1), Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_ashhr"]
+resource_name = "new_animation_2"
+length = 18.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 17.8667, 18),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ashhr"]
+_data = {
+&"RESET": SubResource("Animation_dmuiv"),
+&"new_animation": SubResource("Animation_usd8m"),
+&"new_animation_2": SubResource("Animation_ashhr")
+}
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i6aye"]
+atlas = ExtResource("2_6aabu")
+region = Rect2(16, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_51ysb"]
+atlas = ExtResource("2_6aabu")
+region = Rect2(32, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f4pbi"]
+atlas = ExtResource("2_6aabu")
+region = Rect2(48, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vfqpf"]
+atlas = ExtResource("2_6aabu")
+region = Rect2(64, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_biu7w"]
+atlas = ExtResource("2_6aabu")
+region = Rect2(80, 0, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7qy3g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i6aye")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_51ysb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f4pbi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vfqpf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_biu7w")
+}],
+"loop": false,
+"name": &"default",
+"speed": 0.06
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dmuiv"]
+radius = 4.0
+
+[node name="strawberry" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_mykw5")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 23.0
+one_shot = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_ashhr")
+}
+autoplay = "new_animation_2"
+
+[node name="Timer2" type="Timer" parent="."]
+wait_time = 36.0
+one_shot = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -11)
+sprite_frames = SubResource("SpriteFrames_7qy3g")
+autoplay = "default"
+frame = 4
+frame_progress = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -3)
+shape = SubResource("CircleShape2D_dmuiv")
+disabled = true
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_shape_entered" from="." to="." method="_on_area_shape_entered"]
+[connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer2" to="." method="_on_timer_2_timeout"]

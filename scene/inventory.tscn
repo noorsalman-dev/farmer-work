@@ -1,0 +1,369 @@
+[gd_scene load_steps=23 format=3 uid="uid://bc71uwj77wxq7"]
+
+[ext_resource type="Texture2D" uid="uid://dcujhp0wblach" path="res://assets/Cute_Fantasy_Free/inventory-background(1).png" id="1_fb012"]
+[ext_resource type="Script" uid="uid://be1t8dlfie562" path="res://scene/inventory.gd" id="1_jj3rf"]
+[ext_resource type="Texture2D" uid="uid://bkow5p2bfujgg" path="res://assets/Cute_Fantasy_Free/inventory-slot.png" id="2_kpipp"]
+[ext_resource type="Texture2D" uid="uid://dyutwyotob4pj" path="res://assets/Cute_Fantasy_Free/icons2.png" id="3_jj3rf"]
+[ext_resource type="Texture2D" uid="uid://dmec8plt1ayef" path="res://assets/Hana Caraka - Farming n Foraging [sample]/crops/carrot.png" id="5_u7j7x"]
+[ext_resource type="Texture2D" uid="uid://cve6psxys3sty" path="res://assets/Hana Caraka - Farming n Foraging [sample]/crops/onion.png" id="6_vy7k5"]
+[ext_resource type="Texture2D" uid="uid://bfo3jfcvaoaca" path="res://assets/Hana Caraka - Farming n Foraging [sample]/crops/potato.png" id="7_ehdin"]
+[ext_resource type="Texture2D" uid="uid://clls6eegwglt7" path="res://assets/Hana Caraka - Farming n Foraging [sample]/crops/spinach.png" id="8_yw82r"]
+[ext_resource type="Texture2D" uid="uid://cmxct6ifvodxi" path="res://assets/Hana Caraka - Farming n Foraging [sample]/crops/radish.png" id="9_jnvsl"]
+[ext_resource type="Texture2D" uid="uid://qltgp268t8u2" path="res://assets/Hana Caraka - Farming n Foraging [sample]/crops/turnip.png" id="10_oe16t"]
+[ext_resource type="Texture2D" uid="uid://c1u8bqjrp5p0" path="res://assets/Hana Caraka - Farming n Foraging [sample]/flowers/rose - red.png" id="11_krbml"]
+[ext_resource type="Texture2D" uid="uid://ch01hgw1g0e6y" path="res://assets/Hana Caraka - Farming n Foraging [sample]/flowers/sunflower.png" id="12_2iwpn"]
+[ext_resource type="Texture2D" uid="uid://dttpwbl8iajdj" path="res://assets/Hana Caraka - Farming n Foraging [sample]/herb/chamomile.png" id="13_piqwx"]
+[ext_resource type="Texture2D" uid="uid://cju1iiiih8ngs" path="res://assets/Hana Caraka - Farming n Foraging [sample]/mushroom/oyster.png" id="14_x6dgh"]
+[ext_resource type="Texture2D" uid="uid://tktbl6twu1ra" path="res://assets/Farm RPG FREE 16x16 - Tiny Asset Pack/Objects/Spring Crops.png" id="15_ac5au"]
+[ext_resource type="Texture2D" uid="uid://dno3x3nffeole" path="res://assets/Cute_Fantasy_Free/Outdoor decoration/Outdoor_Decor_Free.png" id="16_skkvr"]
+[ext_resource type="Texture2D" uid="uid://5vvbxkq7jj2r" path="res://assets/Cute_Fantasy_Free/Animals/Sheep/Sheep.png" id="17_4n28n"]
+[ext_resource type="Texture2D" uid="uid://uskfs601fo0y" path="res://assets/Cute_Fantasy_Free/Animals/Chicken/Chicken.png" id="18_olbj8"]
+
+[sub_resource type="Animation" id="Animation_c62h7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_gqai5"]
+resource_name = "new_animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1e-05, 1e-05)]
+}
+
+[sub_resource type="Animation" id="Animation_erijp"]
+resource_name = "new_animation_2"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8tpi4"]
+_data = {
+&"RESET": SubResource("Animation_c62h7"),
+&"new_animation": SubResource("Animation_gqai5"),
+&"new_animation_2": SubResource("Animation_erijp")
+}
+
+[node name="Inventory" type="Sprite2D"]
+script = ExtResource("1_jj3rf")
+
+[node name="Inventory-background(1)" type="Sprite2D" parent="."]
+position = Vector2(-69, 18)
+scale = Vector2(9.25, 7.92188)
+texture = ExtResource("1_fb012")
+
+[node name="Inventory-slot" type="Sprite2D" parent="."]
+position = Vector2(-74, 49)
+scale = Vector2(1.25, 1.125)
+texture = ExtResource("2_kpipp")
+
+[node name="Icons2" type="Sprite2D" parent="."]
+position = Vector2(-64, 13.7774)
+scale = Vector2(0.488636, -0.00412856)
+texture = ExtResource("3_jj3rf")
+region_enabled = true
+region_rect = Rect2(800, 505.5, 15, 96)
+
+[node name="Inventory-slot2" type="Sprite2D" parent="."]
+position = Vector2(-109, 23)
+scale = Vector2(1.25, 1.125)
+texture = ExtResource("2_kpipp")
+
+[node name="Inventory-slot3" type="Sprite2D" parent="."]
+position = Vector2(-46, 49)
+scale = Vector2(1.25, 1.125)
+texture = ExtResource("2_kpipp")
+
+[node name="Inventory-slot4" type="Sprite2D" parent="."]
+position = Vector2(-83, 2)
+scale = Vector2(1.25, 1.125)
+texture = ExtResource("2_kpipp")
+
+[node name="Inventory-slot5" type="Sprite2D" parent="."]
+position = Vector2(-28, 3)
+scale = Vector2(1.25, 1.125)
+texture = ExtResource("2_kpipp")
+
+[node name="Inventory-slot6" type="Sprite2D" parent="."]
+position = Vector2(-108, -20)
+scale = Vector2(1.25, 1.125)
+texture = ExtResource("2_kpipp")
+
+[node name="Inventory-slot7" type="Sprite2D" parent="."]
+position = Vector2(-28, 28)
+scale = Vector2(1.25, 1.125)
+texture = ExtResource("2_kpipp")
+
+[node name="Inventory-slot8" type="Sprite2D" parent="."]
+position = Vector2(-108, 3)
+scale = Vector2(1.25, 1.125)
+texture = ExtResource("2_kpipp")
+
+[node name="Inventory-slot9" type="Sprite2D" parent="."]
+position = Vector2(-83, 26)
+scale = Vector2(1.25, 1.125)
+texture = ExtResource("2_kpipp")
+
+[node name="Inventory-slot10" type="Sprite2D" parent="."]
+position = Vector2(-58, 2)
+scale = Vector2(1.25, 1.125)
+texture = ExtResource("2_kpipp")
+
+[node name="Inventory-slot11" type="Sprite2D" parent="."]
+position = Vector2(-83, -19)
+scale = Vector2(1.25, 1.125)
+texture = ExtResource("2_kpipp")
+
+[node name="Inventory-slot12" type="Sprite2D" parent="."]
+position = Vector2(-56, 27)
+scale = Vector2(1.25, 1.125)
+texture = ExtResource("2_kpipp")
+
+[node name="Inventory-slot13" type="Sprite2D" parent="."]
+position = Vector2(-58, -19)
+scale = Vector2(1.25, 1.125)
+texture = ExtResource("2_kpipp")
+
+[node name="Inventory-slot14" type="Sprite2D" parent="."]
+position = Vector2(-29, -18)
+scale = Vector2(1.25, 1.125)
+texture = ExtResource("2_kpipp")
+
+[node name="Inventory-slot15" type="Sprite2D" parent="."]
+position = Vector2(-113, 49)
+scale = Vector2(1.25, 1.125)
+texture = ExtResource("2_kpipp")
+
+[node name="Carrot" type="Sprite2D" parent="."]
+position = Vector2(-107, 20)
+texture = ExtResource("5_u7j7x")
+region_enabled = true
+region_rect = Rect2(16, 6.5, 17, 27)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+reset_on_save = false
+libraries = {
+&"": SubResource("AnimationLibrary_8tpi4")
+}
+autoplay = "new_animation"
+
+[node name="Onion" type="Sprite2D" parent="."]
+position = Vector2(-83, 25)
+texture = ExtResource("6_vy7k5")
+region_enabled = true
+region_rect = Rect2(15, 10.5, 18, 24)
+
+[node name="Potato" type="Sprite2D" parent="."]
+position = Vector2(-57, 23)
+texture = ExtResource("7_ehdin")
+region_enabled = true
+region_rect = Rect2(14, 8.5, 17, 22)
+
+[node name="Spinach" type="Sprite2D" parent="."]
+position = Vector2(-28, 26)
+texture = ExtResource("8_yw82r")
+region_enabled = true
+region_rect = Rect2(14, 9.5, 18, 25)
+
+[node name="Radish" type="Sprite2D" parent="."]
+position = Vector2(-75, 46)
+texture = ExtResource("9_jnvsl")
+region_enabled = true
+region_rect = Rect2(13.7654, 8.14815, 19.1605, 24.4938)
+
+[node name="Turnip" type="Sprite2D" parent="."]
+position = Vector2(-113, 46)
+texture = ExtResource("10_oe16t")
+region_enabled = true
+region_rect = Rect2(16.4933, 8.98804, 17.1852, 23.7037)
+
+[node name="Rose-Red" type="Sprite2D" parent="."]
+position = Vector2(-45, 48)
+texture = ExtResource("11_krbml")
+region_enabled = true
+region_rect = Rect2(17.9748, 8.7905, 15.6049, 25.284)
+
+[node name="Sunflower" type="Sprite2D" parent="."]
+position = Vector2(-57, 0)
+texture = ExtResource("12_2iwpn")
+region_enabled = true
+region_rect = Rect2(16.9871, 8.00038, 14.8148, 26.8642)
+
+[node name="Chamomile" type="Sprite2D" parent="."]
+position = Vector2(-83, 1)
+texture = ExtResource("13_piqwx")
+region_enabled = true
+region_rect = Rect2(-0.000518799, 8.98804, 16.9876, 26.2716)
+
+[node name="Oyster" type="Sprite2D" parent="."]
+position = Vector2(-109, 2)
+texture = ExtResource("14_x6dgh")
+region_enabled = true
+region_rect = Rect2(16.8884, 2.37075, 15.2099, 16)
+
+[node name="SpringCrops" type="Sprite2D" parent="."]
+position = Vector2(-28, 3)
+texture = ExtResource("15_ac5au")
+region_enabled = true
+region_rect = Rect2(128.904, 16.2849, 14.4198, 16.3951)
+
+[node name="SpringCrops2" type="Sprite2D" parent="."]
+position = Vector2(-29, -18)
+texture = ExtResource("15_ac5au")
+region_enabled = true
+region_rect = Rect2(127.209, 44.5436, 16, 22.9136)
+
+[node name="OutdoorDecorFree" type="Sprite2D" parent="."]
+position = Vector2(-59, -18)
+texture = ExtResource("16_skkvr")
+region_enabled = true
+region_rect = Rect2(95.7032, 48.0828, 16.5428, 18.963)
+
+[node name="Sheep" type="Sprite2D" parent="."]
+position = Vector2(-85, -18)
+texture = ExtResource("17_4n28n")
+region_enabled = true
+region_rect = Rect2(32.3945, 3.45717, 25.4815, 23.5062)
+
+[node name="Chicken" type="Sprite2D" parent="."]
+position = Vector2(-108, -19)
+texture = ExtResource("18_olbj8")
+region_enabled = true
+region_rect = Rect2(7.90072, 6.2226, 17.7778, 21.3333)
+
+[node name="Inventory-background(1)2" type="Sprite2D" parent="."]
+position = Vector2(-70.25, 17.5)
+scale = Vector2(1e-05, 1e-05)
+texture = ExtResource("1_fb012")
+
+[node name="Chicken2" type="Sprite2D" parent="Inventory-background(1)2"]
+position = Vector2(-4.88135, -4.66142)
+scale = Vector2(1e-05, 1e-05)
+texture = ExtResource("18_olbj8")
+region_enabled = true
+region_rect = Rect2(8.95473, 8.49342, 18.3045, 21.07)
+
+[node name="Sheep" type="Sprite2D" parent="Inventory-background(1)2"]
+position = Vector2(-4.98983, -3.27559)
+scale = Vector2(1e-05, 1e-05)
+texture = ExtResource("17_4n28n")
+region_enabled = true
+region_rect = Rect2(4.87242, 6.12305, 20.1481, 17.1193)
+
+[node name="SpringCrops" type="Sprite2D" parent="Inventory-background(1)2"]
+position = Vector2(-4.77288, -1.6378)
+scale = Vector2(1e-05, 1e-05)
+texture = ExtResource("15_ac5au")
+region_enabled = true
+region_rect = Rect2(129.383, 13.5886, 14.3539, 20.8066)
+
+[node name="SpringCrops2" type="Sprite2D" parent="Inventory-background(1)2"]
+position = Vector2(-4.98983, -0.251968)
+scale = Vector2(1e-05, 1e-05)
+texture = ExtResource("15_ac5au")
+region_enabled = true
+region_rect = Rect2(127.276, 45.6292, 15.8025, 19.6214)
+
+[node name="Carrot" type="Sprite2D" parent="Inventory-background(1)2"]
+position = Vector2(-4.77288, 1.25984)
+scale = Vector2(1e-05, 1e-05)
+texture = ExtResource("5_u7j7x")
+region_enabled = true
+region_rect = Rect2(15.7695, 8.55926, 16.1975, 22.5185)
+
+[node name="Onion" type="Sprite2D" parent="Inventory-background(1)2"]
+position = Vector2(-4.88135, 3.14961)
+scale = Vector2(1e-05, 1e-05)
+texture = ExtResource("6_vy7k5")
+region_enabled = true
+region_rect = Rect2(14.0576, 14.0901, 22.3868, 17.5144)
+
+[node name="OutdoorDecorFree" type="Sprite2D" parent="Inventory-background(1)2"]
+position = Vector2(-4.98983, 5.03937)
+scale = Vector2(1e-05, 1e-05)
+texture = ExtResource("16_skkvr")
+region_enabled = true
+region_rect = Rect2(95.7032, 48.0828, 16.5428, 18.963)
+
+[node name="Potato" type="Sprite2D" parent="Inventory-background(1)2"]
+position = Vector2(0.542375, -6.55118)
+scale = Vector2(1e-05, 1e-05)
+texture = ExtResource("7_ehdin")
+region_enabled = true
+region_rect = Rect2(15.1111, 9.87613, 16.3292, 21.465)
+
+[node name="Radish" type="Sprite2D" parent="Inventory-background(1)2"]
+position = Vector2(0.759324, -5.03937)
+scale = Vector2(1e-05, 1e-05)
+texture = ExtResource("9_jnvsl")
+region_enabled = true
+region_rect = Rect2(14.8477, 9.87613, 19.7531, 22.2551)
+
+[node name="Spinach" type="Sprite2D" parent="Inventory-background(1)2"]
+position = Vector2(1.19322, -3.52756)
+scale = Vector2(1e-05, 1e-05)
+texture = ExtResource("8_yw82r")
+region_enabled = true
+region_rect = Rect2(15.7695, 11.4564, 16.5926, 20.6749)
+
+[node name="Turnip" type="Sprite2D" parent="Inventory-background(1)2"]
+position = Vector2(1.19322, -1.6378)
+scale = Vector2(1e-05, 1e-05)
+texture = ExtResource("10_oe16t")
+region_enabled = true
+region_rect = Rect2(17.3498, 11.8514, 15.6708, 20.6749)
+
+[node name="Rose-Red" type="Sprite2D" parent="Inventory-background(1)2"]
+position = Vector2(1.41017, -0.125984)
+scale = Vector2(1e-05, 1e-05)
+texture = ExtResource("11_krbml")
+region_enabled = true
+region_rect = Rect2(15.7366, 11.9831, 17.3827, 19.0947)
+
+[node name="Sunflower" type="Sprite2D" parent="Inventory-background(1)2"]
+position = Vector2(1.41017, 1.76378)
+scale = Vector2(1e-05, 1e-05)
+texture = ExtResource("12_2iwpn")
+region_enabled = true
+region_rect = Rect2(16.6584, 15.6704, 15.4074, 14.4856)
+
+[node name="Chamomile" type="Sprite2D" parent="Inventory-background(1)2"]
+position = Vector2(1.3017, 2.77165)
+scale = Vector2(1e-05, 1e-05)
+texture = ExtResource("13_piqwx")
+region_enabled = true
+region_rect = Rect2(0, 0, 16.9218, 32)
+
+[node name="Oyster" type="Sprite2D" parent="Inventory-background(1)2"]
+position = Vector2(1.3017, 5.16535)
+scale = Vector2(1e-05, 1e-05)
+texture = ExtResource("14_x6dgh")
+region_enabled = true
+region_rect = Rect2(17.0206, 0.822634, 13.037, 13.1687)

@@ -1,0 +1,138 @@
+[gd_scene load_steps=12 format=3 uid="uid://dlurdwsrdnyhm"]
+
+[ext_resource type="Script" uid="uid://ctnejh4d0fnyd" path="res://script/turnip.gd" id="1_3it1u"]
+[ext_resource type="Texture2D" uid="uid://qltgp268t8u2" path="res://assets/Hana Caraka - Farming n Foraging [sample]/crops/turnip.png" id="2_l8cl2"]
+
+[sub_resource type="Animation" id="Animation_dmuiv"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_usd8m"]
+resource_name = "new_animation"
+length = 18.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0261521, 17.8667, 17.9667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1e-05, 1), Vector2(1e-05, 1), Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_ashhr"]
+resource_name = "new_animation_2"
+length = 11.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 10.8667, 10.9667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ashhr"]
+_data = {
+&"RESET": SubResource("Animation_dmuiv"),
+&"new_animation": SubResource("Animation_usd8m"),
+&"new_animation_2": SubResource("Animation_ashhr")
+}
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mxmps"]
+atlas = ExtResource("2_l8cl2")
+region = Rect2(32, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6u5nm"]
+atlas = ExtResource("2_l8cl2")
+region = Rect2(48, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uqou4"]
+atlas = ExtResource("2_l8cl2")
+region = Rect2(64, 0, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sictu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mxmps")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6u5nm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uqou4")
+}],
+"loop": false,
+"name": &"default",
+"speed": 0.2
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dmuiv"]
+radius = 4.0
+
+[node name="turnip" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_3it1u")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 23.0
+one_shot = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_ashhr")
+}
+autoplay = "new_animation_2"
+
+[node name="Timer2" type="Timer" parent="."]
+wait_time = 18.0
+one_shot = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -11)
+sprite_frames = SubResource("SpriteFrames_sictu")
+autoplay = "default"
+frame = 2
+frame_progress = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -2)
+shape = SubResource("CircleShape2D_dmuiv")
+disabled = true
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_shape_entered" from="." to="." method="_on_area_shape_entered"]
+[connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer2" to="." method="_on_timer_2_timeout"]
