@@ -1145,7 +1145,7 @@ position = Vector2(353, -49)
 [node name="Node2D15" type="Node2D" parent="Node2D2"]
 
 [node name="skiliton" parent="Node2D2/Node2D15" instance=ExtResource("2_guiot")]
-position = Vector2(115, -139)
+position = Vector2(604, -117)
 
 [node name="skiliton2" parent="Node2D2/Node2D15" instance=ExtResource("2_guiot")]
 position = Vector2(1024, -293)
@@ -1172,13 +1172,13 @@ position = Vector2(272, -156)
 position = Vector2(372, -211)
 
 [node name="skiliton10" parent="Node2D2/Node2D15" instance=ExtResource("2_guiot")]
-position = Vector2(-69, -104)
+position = Vector2(-263, -174)
 
 [node name="skiliton11" parent="Node2D2/Node2D15" instance=ExtResource("2_guiot")]
-position = Vector2(93, 25)
+position = Vector2(349, 93)
 
 [node name="skiliton12" parent="Node2D2/Node2D15" instance=ExtResource("2_guiot")]
-position = Vector2(141, -74)
+position = Vector2(291, -92)
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(-1, 1)
@@ -1508,16 +1508,17 @@ theme_override_font_sizes/font_size = 8
 text = "0"
 
 [node name="Label" type="Label" parent="player"]
-offset_left = -145.0
-offset_top = -80.0
-offset_right = -97.0
-offset_bottom = -57.0
+offset_left = -142.0
+offset_top = -78.0
+offset_right = -94.0
+offset_bottom = -55.0
 theme_override_fonts/font = ExtResource("5_su6sf")
+theme_override_font_sizes/font_size = 8
 text = "kkk"
 script = ExtResource("42_4irf7")
 
 [node name="Timer2" type="Timer" parent="player"]
-wait_time = 3698.0
+wait_time = 400.0
 one_shot = true
 autostart = true
 
