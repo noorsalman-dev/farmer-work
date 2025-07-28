@@ -114,7 +114,7 @@ func adds_00000342_point():
 
 
 func mainas_point():
-	scoreou = score + scoreouoioi - 1
+	scoreou = score + scoreouoioi - 30
 	label_5.text = str(scoreou)
 	print("jmjdvskjdsksdmds,dsksldl;dsd;lsdkdskdsl")
 

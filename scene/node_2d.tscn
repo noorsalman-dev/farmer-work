@@ -1,4 +1,4 @@
-[gd_scene load_steps=66 format=3 uid="uid://dytjnnyegm4nb"]
+[gd_scene load_steps=67 format=3 uid="uid://dytjnnyegm4nb"]
 
 [ext_resource type="PackedScene" uid="uid://c20184mu754p4" path="res://manger/gvdeujgghgg.tscn" id="1_bapa2"]
 [ext_resource type="PackedScene" uid="uid://dju7o0la52lgl" path="res://scene/player.tscn" id="1_drhme"]
@@ -41,7 +41,7 @@
 [ext_resource type="PackedScene" uid="uid://kplouwfkd70q" path="res://plant/sunflower.tscn" id="34_gyukw"]
 [ext_resource type="PackedScene" uid="uid://dnx2ter237chg" path="res://plant/sheep.tscn" id="35_4irf7"]
 [ext_resource type="PackedScene" uid="uid://cu1yejgsdl126" path="res://plant/crop.tscn" id="37_q214a"]
-[ext_resource type="Script" uid="uid://ch040c4nu17c5" path="res://scene/label.gd" id="42_4irf7"]
+[ext_resource type="Script" uid="uid://ch040c4nu17c5" path="res://script/label.gd" id="42_4irf7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ssc4f"]
 texture = ExtResource("6_3u7g2")
@@ -579,6 +579,9 @@ sources/9 = SubResource("TileSetAtlasSource_p0rpq")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cw5uo"]
 size = Vector2(20, 18)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4irf7"]
+size = Vector2(80, 7)
 
 [node name="Node2D" type="Node2D"]
 metadata/_edit_vertical_guides_ = [207.0]
@@ -1518,9 +1521,30 @@ text = "kkk"
 script = ExtResource("42_4irf7")
 
 [node name="Timer2" type="Timer" parent="player"]
-wait_time = 400.0
+wait_time = 120.0
 one_shot = true
 autostart = true
+
+[node name="Label2" type="Label" parent="player"]
+offset_left = -102.0
+offset_top = -62.0
+offset_right = 103.0
+offset_bottom = -21.0
+theme_override_fonts/font = ExtResource("5_su6sf")
+theme_override_font_sizes/font_size = 8
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Area2D2" type="Area2D" parent="player"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player/Area2D2"]
+position = Vector2(4, -24.5)
+shape = SubResource("RectangleShape2D_4irf7")
+disabled = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="player/Area2D2"]
+position = Vector2(4, -24.5)
+shape = SubResource("RectangleShape2D_4irf7")
 
 [connection signal="body_entered" from="Node2D2/Node2D4/closer" to="Node/game_manger" method="_on_closer_body_entered"]
 [connection signal="input_event" from="player/Inventory/Node2D/Area2D" to="Node/game_manger" method="_on_area_2d_input_event"]
@@ -1539,3 +1563,4 @@ autostart = true
 [connection signal="input_event" from="player/Inventory/Node2D/Area2D13" to="Node/game_manger" method="_on_area_2d_13_input_event"]
 [connection signal="input_event" from="player/Inventory/Node2D/Area2D14" to="Node/game_manger" method="_on_area_2d_14_input_event"]
 [connection signal="input_event" from="player/Inventory/Node2D/Area2D15" to="Node/game_manger" method="_on_area_2d_15_input_event"]
+[connection signal="input_event" from="player/Area2D2" to="player/Label" method="_on_area_2d_2_input_event"]

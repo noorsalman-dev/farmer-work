@@ -68,6 +68,8 @@ func play_anim(movement):
 				anim.play("side_idle")
 		if Input.is_action_just_pressed("ui_accept"):
 			animation_player.play("side")
+		if Input.is_action_just_pressed("z"):
+			animation_player.play("with_attack")
 	if dir == "left":
 		if movement == 1:
 			anim.flip_h = true
@@ -78,6 +80,8 @@ func play_anim(movement):
 				anim.play("side_idle")
 		if Input.is_action_just_pressed("ui_accept"):
 			animation_player.play("side_attack")
+		if Input.is_action_just_pressed("z"):
+			animation_player.play("in_attack")
 	if dir == "up":
 		if movement == 1:
 			anim.play("back_walk")
@@ -88,6 +92,8 @@ func play_anim(movement):
 				anim.play("back_idle")
 		if Input.is_action_just_pressed("ui_accept"):
 			animation_player.play("back_attack")
+		if Input.is_action_just_pressed("z"):
+			animation_player.play("attack")
 	if dir == "down":
 		if movement == 1:
 			anim.play("front_walk")
@@ -97,7 +103,8 @@ func play_anim(movement):
 			anim.flip_h = true
 		if Input.is_action_just_pressed("ui_accept"):
 			animation_player.play("front_attack")
-	
+		if Input.is_action_just_pressed("z"):
+			animation_player.play("by_attack")
 	
 	
 	
@@ -110,10 +117,3 @@ func play_anim(movement):
 	
 		
 	
-
-
-func _on_hit_area_entered(area: Area2D) -> void:
-	health = health - 20 
-	progress_bar.value = health
-	if health <=0:
-		get_tree().reload_current_scene()

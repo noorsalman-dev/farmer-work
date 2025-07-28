@@ -1,7 +1,7 @@
 [gd_scene load_steps=23 format=3 uid="uid://bc71uwj77wxq7"]
 
 [ext_resource type="Texture2D" uid="uid://dcujhp0wblach" path="res://assets/Cute_Fantasy_Free/inventory-background(1).png" id="1_fb012"]
-[ext_resource type="Script" uid="uid://be1t8dlfie562" path="res://scene/inventory.gd" id="1_jj3rf"]
+[ext_resource type="Script" uid="uid://be1t8dlfie562" path="res://inventory.gd" id="1_jj3rf"]
 [ext_resource type="Texture2D" uid="uid://bkow5p2bfujgg" path="res://assets/Cute_Fantasy_Free/inventory-slot.png" id="2_kpipp"]
 [ext_resource type="Texture2D" uid="uid://dyutwyotob4pj" path="res://assets/Cute_Fantasy_Free/icons2.png" id="3_jj3rf"]
 [ext_resource type="Texture2D" uid="uid://dmec8plt1ayef" path="res://assets/Hana Caraka - Farming n Foraging [sample]/crops/carrot.png" id="5_u7j7x"]
