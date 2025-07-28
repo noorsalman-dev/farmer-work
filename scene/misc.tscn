@@ -1,0 +1,93 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwknwjx8f2pxo"]
+
+[ext_resource type="Texture2D" uid="uid://dx1f5p5320avt" path="res://assets/Hana Caraka - Farming n Foraging [sample]/misc.png" id="1_gg0be"]
+
+[node name="Misc" type="Sprite2D"]
+position = Vector2(-14, 7)
+texture = ExtResource("1_gg0be")
+region_enabled = true
+region_rect = Rect2(31.9259, 0, 16.0741, 15.9383)
+
+[node name="Misc" type="Sprite2D" parent="."]
+position = Vector2(-16, 0)
+texture = ExtResource("1_gg0be")
+region_enabled = true
+region_rect = Rect2(31.9259, 0, 16.0741, 15.9383)
+
+[node name="Misc2" type="Sprite2D" parent="."]
+position = Vector2(-16, 15)
+texture = ExtResource("1_gg0be")
+region_enabled = true
+region_rect = Rect2(31.9259, 0, 16.0741, 15.9383)
+
+[node name="Misc3" type="Sprite2D" parent="."]
+position = Vector2(0, 15)
+texture = ExtResource("1_gg0be")
+region_enabled = true
+region_rect = Rect2(31.9259, 0, 16.0741, 15.9383)
+
+[node name="Misc4" type="Sprite2D" parent="."]
+position = Vector2(0, 31)
+texture = ExtResource("1_gg0be")
+region_enabled = true
+region_rect = Rect2(31.9259, 0, 16.0741, 15.9383)
+
+[node name="Misc5" type="Sprite2D" parent="."]
+position = Vector2(-16, 31)
+texture = ExtResource("1_gg0be")
+region_enabled = true
+region_rect = Rect2(31.9259, 0, 16.0741, 15.9383)
+
+[node name="Misc6" type="Sprite2D" parent="."]
+position = Vector2(-32, 0)
+texture = ExtResource("1_gg0be")
+region_enabled = true
+region_rect = Rect2(31.9259, 0, 16.0741, 15.9383)
+
+[node name="Misc7" type="Sprite2D" parent="."]
+position = Vector2(-32, 15)
+texture = ExtResource("1_gg0be")
+region_enabled = true
+region_rect = Rect2(31.9259, 0, 16.0741, 15.9383)
+
+[node name="Misc8" type="Sprite2D" parent="."]
+position = Vector2(-32, 31)
+texture = ExtResource("1_gg0be")
+region_enabled = true
+region_rect = Rect2(31.9259, 0, 16.0741, 15.9383)
+
+[node name="Misc9" type="Sprite2D" parent="."]
+position = Vector2(-32, 46)
+texture = ExtResource("1_gg0be")
+region_enabled = true
+region_rect = Rect2(31.9259, 0, 16.0741, 15.9383)
+
+[node name="Misc10" type="Sprite2D" parent="."]
+position = Vector2(-16, 46)
+texture = ExtResource("1_gg0be")
+region_enabled = true
+region_rect = Rect2(31.9259, 0, 16.0741, 15.9383)
+
+[node name="Misc11" type="Sprite2D" parent="."]
+position = Vector2(0, 46)
+texture = ExtResource("1_gg0be")
+region_enabled = true
+region_rect = Rect2(31.9259, 0, 16.0741, 15.9383)
+
+[node name="Misc12" type="Sprite2D" parent="."]
+position = Vector2(0, 61)
+texture = ExtResource("1_gg0be")
+region_enabled = true
+region_rect = Rect2(31.9259, 0, 16.0741, 15.9383)
+
+[node name="Misc13" type="Sprite2D" parent="."]
+position = Vector2(-16, 61)
+texture = ExtResource("1_gg0be")
+region_enabled = true
+region_rect = Rect2(31.9259, 0, 16.0741, 15.9383)
+
+[node name="Misc14" type="Sprite2D" parent="."]
+position = Vector2(-32, 61)
+texture = ExtResource("1_gg0be")
+region_enabled = true
+region_rect = Rect2(31.9259, 0, 16.0741, 15.9383)

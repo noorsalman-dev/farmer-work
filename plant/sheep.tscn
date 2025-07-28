@@ -1,0 +1,62 @@
+[gd_scene load_steps=7 format=3 uid="uid://dnx2ter237chg"]
+
+[ext_resource type="Script" uid="uid://dsjjdegp7h5nq" path="res://script/sheep.gd" id="1_u2i3l"]
+[ext_resource type="Texture2D" uid="uid://5vvbxkq7jj2r" path="res://assets/Cute_Fantasy_Free/Animals/Sheep/Sheep.png" id="2_u2i3l"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yuoni"]
+atlas = ExtResource("2_u2i3l")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lc675"]
+atlas = ExtResource("2_u2i3l")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6d3ux"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yuoni")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lc675")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dmuiv"]
+radius = 4.0
+
+[node name="sheep" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_u2i3l")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 18.0
+one_shot = true
+
+[node name="Timer2" type="Timer" parent="."]
+wait_time = 40.0
+one_shot = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -5)
+sprite_frames = SubResource("SpriteFrames_6d3ux")
+autoplay = "default"
+frame_progress = 0.337409
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-5, -7)
+shape = SubResource("CircleShape2D_dmuiv")
+
+[node name="Timer3" type="Timer" parent="."]
+wait_time = 20.0
+one_shot = true
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_shape_entered" from="." to="." method="_on_area_shape_entered"]
+[connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer2" to="." method="_on_timer_2_timeout"]
+[connection signal="timeout" from="Timer3" to="." method="_on_timer_3_timeout"]

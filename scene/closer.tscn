@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b4b0ajl53u484"]
+
+[ext_resource type="Script" uid="uid://bcbjhh8scjnbm" path="res://script/closer.gd" id="1_kj2dv"]
+
+[node name="closer" type="Area2D"]
+collision_layer = 2
+script = ExtResource("1_kj2dv")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
