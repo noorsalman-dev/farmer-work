@@ -1,5 +1,6 @@
 extends Label
 var uyu = 180
+var laipoiuujjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjiiiiiiiiiiiiiiiiiiiiiiiiuiiiiuiuiuiiiuiiuuiiuiuiuiuiuiiuii
 @onready var labeljjj: Label = $"."
 @onready var timeruuu: Timer = $"../Timer"
 @onready var label: Label = $"."

@@ -2,9 +2,10 @@ extends CharacterBody2D
 
 var health = 100
 
-const SPEED = 100.0
+const SPEED = 140.0
 var current_dir = "none"
 var hight = false
+var highte = false
 @onready var anim: AnimatedSprite2D = $AnimatedSprite2D
 @onready var timer: Timer = $Timer
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
@@ -55,7 +56,9 @@ func player_movement(delta):
 func play_anim(movement):
 	var dir = current_dir
 	
-
+	if Input.is_action_just_pressed("ui_accept"):
+		hight = true
+		timer.start()
 	
 	if dir == "right":
 		
@@ -66,6 +69,9 @@ func play_anim(movement):
 			if hight == false:
 				anim.flip_h = false
 				anim.play("side_idle")
+			elif hight == true:
+				anim.play("side_attack")
+				anim.flip_h = false
 		if Input.is_action_just_pressed("ui_accept"):
 			animation_player.play("side")
 		if Input.is_action_just_pressed("z"):
@@ -78,6 +84,9 @@ func play_anim(movement):
 			if hight == false:
 				anim.flip_h = true
 				anim.play("side_idle")
+			elif hight == true:
+				anim.play("side_attack")
+				anim.flip_h = true
 		if Input.is_action_just_pressed("ui_accept"):
 			animation_player.play("side_attack")
 		if Input.is_action_just_pressed("z"):
@@ -90,6 +99,9 @@ func play_anim(movement):
 			if hight == false:
 				anim.flip_h = true
 				anim.play("back_idle")
+			elif hight == true:
+				anim.play("back_attack")
+				anim.flip_h = true
 		if Input.is_action_just_pressed("ui_accept"):
 			animation_player.play("back_attack")
 		if Input.is_action_just_pressed("z"):
@@ -99,8 +111,12 @@ func play_anim(movement):
 			anim.play("front_walk")
 			anim.flip_h = true
 		elif movement == 0:
-			anim.play("front_idle")
-			anim.flip_h = true
+			if hight == false:
+				anim.play("front_idle")
+				anim.flip_h = true
+			elif hight == true:
+				anim.play("front_attack")
+				anim.flip_h = true
 		if Input.is_action_just_pressed("ui_accept"):
 			animation_player.play("front_attack")
 		if Input.is_action_just_pressed("z"):
@@ -108,12 +124,21 @@ func play_anim(movement):
 	
 	
 	
+func guoi ():
+	if Input.is_action_just_pressed("ui_accept"):
+		hight = true
+		timer.start()
 
 
-
-
+func plpp():
+	highte = true
+	anim.flip_v =true
 
  
 	
 		
 	
+
+
+func _on_timer_timeout() -> void:
+	hight = false

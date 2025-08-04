@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://ct7bkciogup47"]
+
+[sub_resource type="GDScript" id="GDScript_186t8"]
+script/source = "extends CharacterBody2D
+
+
+const SPEED = 300.0
+const JUMP_VELOCITY = -400.0
+
+
+func _physics_process(delta: float) -> void:
+	if Input.is_action_just_pressed(\"left\"):
+		var vel : Vector2 = get_global_mouse_position() - global_position
+		velocity = vel
+		move_and_slide()
+"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_f50pn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_44cfe"]
+size = Vector2(44, 69)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = SubResource("GDScript_186t8")
+
+[node name="169656" type="Sprite2D" parent="."]
+position = Vector2(12, -12)
+texture = SubResource("CompressedTexture2D_f50pn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(12, -12.5)
+shape = SubResource("RectangleShape2D_44cfe")

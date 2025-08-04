@@ -1,0 +1,143 @@
+[gd_scene load_steps=18 format=3 uid="uid://djf4jyucj6qg7"]
+
+[ext_resource type="Script" uid="uid://dhrt4onkah05a" path="res://script/skiliton.gd" id="1_mn6ul"]
+[ext_resource type="Script" uid="uid://d4b7o75cobqd1" path="res://moster/take_hit.gd" id="2_273i0"]
+[ext_resource type="Texture2D" uid="uid://i3dexaj412vg" path="res://assets/Cute_Fantasy_Free/Enemies/Slime.png" id="3_2t7wx"]
+[ext_resource type="PackedScene" uid="uid://bj07tgjl4gklv" path="res://scene/progress_bar.tscn" id="4_bg6dn"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_m20d8"]
+radius = 13.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_po031"]
+radius = 83.0241
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mn6ul"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ak6u"]
+atlas = ExtResource("3_2t7wx")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_16t26"]
+atlas = ExtResource("3_2t7wx")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t4tu3"]
+atlas = ExtResource("3_2t7wx")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7531w"]
+atlas = ExtResource("3_2t7wx")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mn6ul"]
+atlas = ExtResource("3_2t7wx")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_273i0"]
+atlas = ExtResource("3_2t7wx")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2t7wx"]
+atlas = ExtResource("3_2t7wx")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bg6dn"]
+atlas = ExtResource("3_2t7wx")
+region = Rect2(96, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_asnsx"]
+atlas = ExtResource("3_2t7wx")
+region = Rect2(128, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_asnsx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ak6u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_16t26")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t4tu3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7531w")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mn6ul")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_273i0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2t7wx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bg6dn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_asnsx")
+}],
+"loop": false,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[node name="alien" type="CharacterBody2D"]
+position = Vector2(-1, 0)
+collision_mask = 7
+script = ExtResource("1_mn6ul")
+
+[node name="take_hit" type="Area2D" parent="."]
+collision_mask = 8
+script = ExtResource("2_273i0")
+
+[node name="hit" type="Area2D" parent="take_hit"]
+collision_layer = 134217728
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="take_hit/hit"]
+position = Vector2(2, -6)
+shape = SubResource("CircleShape2D_m20d8")
+
+[node name="dete" type="Area2D" parent="take_hit"]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="take_hit/dete"]
+position = Vector2(0, -1)
+shape = SubResource("CircleShape2D_po031")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="take_hit"]
+position = Vector2(3, -5)
+shape = SubResource("CircleShape2D_mn6ul")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="take_hit"]
+position = Vector2(4, -7)
+sprite_frames = SubResource("SpriteFrames_asnsx")
+animation = &"new_animation"
+autoplay = "default"
+frame = 4
+frame_progress = 1.0
+
+[node name="ProgressBar" parent="take_hit" instance=ExtResource("4_bg6dn")]
+offset_left = -3.0
+offset_top = 9.0
+offset_right = 7.0
+value = 100.0
+
+[node name="Timer" type="Timer" parent="take_hit"]
+
+[node name="Timer2" type="Timer" parent="take_hit"]
+wait_time = 0.5
+
+[connection signal="area_entered" from="take_hit" to="take_hit" method="_on_area_entered"]
+[connection signal="area_entered" from="take_hit/hit" to="." method="_on_hit_area_entered"]
+[connection signal="body_entered" from="take_hit/dete" to="." method="_on_dete_body_entered"]
+[connection signal="body_exited" from="take_hit/dete" to="." method="_on_dete_body_exited"]
+[connection signal="timeout" from="take_hit/Timer" to="." method="_on_timer_timeout"]

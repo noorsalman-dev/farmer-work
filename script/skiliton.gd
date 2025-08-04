@@ -2,16 +2,24 @@ extends CharacterBody2D
 
 var health = 100
 var current_dir = "none"
-@onready var anim: AnimatedSprite2D = $AnimatedSprite2D
+
 var speed = 120
 var player_chase = false
 var player = null
+var movment = false
 @onready var hit: Area2D = $hit
+@onready var timer: Timer = $take_hit/Timer
+@onready var anim: AnimatedSprite2D = $take_hit/AnimatedSprite2D
+@onready var timer_2: Timer = $take_hit/Timer2
+@onready var collision_shape_2d: CollisionShape2D = $take_hit/hit/CollisionShape2D
+@onready var animated_sprite_2d: AnimatedSprite2D = $take_hit/AnimatedSprite2D
 
 
 
 
 func _physics_process(delta):
+	if movment == true:
+		animated_sprite_2d.play("default")
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 	
@@ -21,11 +29,15 @@ func _physics_process(delta):
 
 
 func _on_dete_body_entered(body: Node2D) -> void:
+	timer.start()
+	movment = true
 	player = body
 	player_chase = true
 
 
 func _on_dete_body_exited(body: Node2D) -> void:
+	timer.stop()
+	movment = false
 	player = null
 	player_chase = false
 
@@ -69,3 +81,9 @@ func play_anim(movement):
 			anim.play("front_walk")
 		elif movement == 0:
 			anim.play("front_idle")
+
+
+func _on_timer_timeout() -> void:
+	collision_shape_2d.disabled = true
+	if collision_shape_2d.disabled == true:
+		collision_shape_2d.disabled = false

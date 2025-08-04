@@ -18,6 +18,7 @@ var score00000435 = 0
 var score00005678 = 0
 var score00000489 = 0
 var score00000342 = 0
+var score00q000342 = 0
 @onready var la: Label = $Label
 @onready var lab: Label = $"../player/Inventory/Label"
 @onready var label_5rtttyttyty: Label = $"../../player/Inventory/Node2D2/Label5"
@@ -38,12 +39,23 @@ var score00000342 = 0
 @onready var label2: Label = $"../../player/Inventory/Node2D2/Node2D2/Label2"
 @onready var label9: Label = $"../../player/Inventory/Node2D2/Label9"
 @onready var label7: Label = $"../../player/Inventory/Node2D2/Node2D2/Label7"
+@onready var label_10: Label = $"../../player/Inventory/Node2D2/Label10"
+@onready var area_2d_16: Area2D = $"../../player/Inventory/Node2D/Area2D16"
+@onready var labeeeeel_10: Label = $Label
 
    
-   
+func _physics_process(delta: float) -> void:
+	if scoreou >= 2000:
+		get_tree().change_scene_to_file("res://scene/game.tscn")  
+
+ 
 func add_point():
 	score = score + 1
 	label.text = str(score)
+
+func addss00q000342_point():
+	score00q000342 = score00q000342 + 1
+	labeeeeel_10.text = str(score00q000342)
 
 func adds_point():
 	scoreouoioi += 1
@@ -245,3 +257,13 @@ func _on_area_2d_15_input_event(viewport: Node, event: InputEvent, shape_idx: in
 		label_5.text = str(scoreou)
 		score00000342 = 0
 		label7.text = str(score00000342)
+
+
+func _on_area_2d_16_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
+	
+	
+	if Input.is_action_just_pressed("ehyguy"):
+		scoreou = (score00q000342 * 30) + scoreou
+		label_5.text = str(scoreou)
+		score00q000342 = 0
+		label_10.text = str(score00q000342)

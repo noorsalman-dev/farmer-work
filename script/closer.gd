@@ -15,5 +15,8 @@ extends Area2D
 
 
 func _on_body_entered(body: Node2D) -> void:
-	print("lofd;pflfkdplfdlpfdlflfmkmngbkgfkidfjogjdf;oj;vdljvl.jfdkln")
-	self.queue_free()
+	if Input.is_action_just_pressed("qw"):
+		print("lofd;pflfkdplfdlpfdlflfmkmngbkgfkidfjogjdf;oj;vdljvl.jfdkln")
+		self.queue_free()
+		print("lofd;pflfkdplfdlpfdlflfmkmngbkgfkidfjogjdf;oj;vdljvl.jfdkln")
+		game_manger

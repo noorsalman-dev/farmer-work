@@ -80,7 +80,7 @@ scale = Vector2(9.25, 7.92188)
 texture = ExtResource("1_fb012")
 
 [node name="Inventory-slot" type="Sprite2D" parent="."]
-position = Vector2(-74, 49)
+position = Vector2(-55, 49)
 scale = Vector2(1.25, 1.125)
 texture = ExtResource("2_kpipp")
 
@@ -97,7 +97,7 @@ scale = Vector2(1.25, 1.125)
 texture = ExtResource("2_kpipp")
 
 [node name="Inventory-slot3" type="Sprite2D" parent="."]
-position = Vector2(-46, 49)
+position = Vector2(-24, 50)
 scale = Vector2(1.25, 1.125)
 texture = ExtResource("2_kpipp")
 
@@ -157,7 +157,7 @@ scale = Vector2(1.25, 1.125)
 texture = ExtResource("2_kpipp")
 
 [node name="Inventory-slot15" type="Sprite2D" parent="."]
-position = Vector2(-113, 49)
+position = Vector2(-108, 43)
 scale = Vector2(1.25, 1.125)
 texture = ExtResource("2_kpipp")
 
@@ -193,19 +193,19 @@ region_enabled = true
 region_rect = Rect2(14, 9.5, 18, 25)
 
 [node name="Radish" type="Sprite2D" parent="."]
-position = Vector2(-75, 46)
+position = Vector2(-55, 45)
 texture = ExtResource("9_jnvsl")
 region_enabled = true
 region_rect = Rect2(13.7654, 8.14815, 19.1605, 24.4938)
 
 [node name="Turnip" type="Sprite2D" parent="."]
-position = Vector2(-113, 46)
+position = Vector2(-108, 40)
 texture = ExtResource("10_oe16t")
 region_enabled = true
 region_rect = Rect2(16.4933, 8.98804, 17.1852, 23.7037)
 
 [node name="Rose-Red" type="Sprite2D" parent="."]
-position = Vector2(-45, 48)
+position = Vector2(-23, 48)
 texture = ExtResource("11_krbml")
 region_enabled = true
 region_rect = Rect2(17.9748, 8.7905, 15.6049, 25.284)
