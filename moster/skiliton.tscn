@@ -1,10 +1,10 @@
 [gd_scene load_steps=21 format=3 uid="uid://cfv3d4l5mf8qa"]
 
 [ext_resource type="Script" uid="uid://w4pd42fuu5a7" path="res://alien.gd" id="1_po031"]
-[ext_resource type="Script" uid="uid://d4b7o75cobqd1" path="res://moster/take_hit.gd" id="2_po031"]
-[ext_resource type="PackedScene" uid="uid://bj07tgjl4gklv" path="res://scene/progress_bar.tscn" id="3_m20d8"]
-[ext_resource type="Texture2D" uid="uid://baj7he2vdeqwe" path="res://assets/xeno-grunt/spritesheets/2x/xeno-grunt-idle.png" id="3_po031"]
-[ext_resource type="Texture2D" uid="uid://ua8544piscjr" path="res://assets/xeno-grunt/spritesheets/2x/xeno-grunt-attack-1.png" id="4_7ew2q"]
+[ext_resource type="Script" uid="uid://d4b7o75cobqd1" path="res://moster/take_hit.gd" id="2_7ew2q"]
+[ext_resource type="Texture2D" uid="uid://baj7he2vdeqwe" path="res://assets/xeno-grunt/spritesheets/2x/xeno-grunt-idle.png" id="3_txg22"]
+[ext_resource type="Texture2D" uid="uid://ua8544piscjr" path="res://assets/xeno-grunt/spritesheets/2x/xeno-grunt-attack-1.png" id="4_ebdwo"]
+[ext_resource type="PackedScene" uid="uid://bj07tgjl4gklv" path="res://scene/progress_bar.tscn" id="5_ge1us"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_m20d8"]
 radius = 19.0263
@@ -16,47 +16,47 @@ radius = 83.0241
 size = Vector2(20, 38)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_txg22"]
-atlas = ExtResource("3_po031")
+atlas = ExtResource("3_txg22")
 region = Rect2(0, 64, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ebdwo"]
-atlas = ExtResource("3_po031")
+atlas = ExtResource("3_txg22")
 region = Rect2(128, 64, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ge1us"]
-atlas = ExtResource("4_7ew2q")
+atlas = ExtResource("4_ebdwo")
 region = Rect2(0, 64, 128, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lwsn1"]
-atlas = ExtResource("4_7ew2q")
+atlas = ExtResource("4_ebdwo")
 region = Rect2(128, 64, 128, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q4ghq"]
-atlas = ExtResource("4_7ew2q")
+atlas = ExtResource("4_ebdwo")
 region = Rect2(256, 64, 128, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oeoo2"]
-atlas = ExtResource("4_7ew2q")
+atlas = ExtResource("4_ebdwo")
 region = Rect2(384, 64, 128, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lwdvp"]
-atlas = ExtResource("4_7ew2q")
+atlas = ExtResource("4_ebdwo")
 region = Rect2(512, 64, 128, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_77vmt"]
-atlas = ExtResource("4_7ew2q")
+atlas = ExtResource("4_ebdwo")
 region = Rect2(640, 64, 128, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ulytl"]
-atlas = ExtResource("4_7ew2q")
+atlas = ExtResource("4_ebdwo")
 region = Rect2(768, 64, 128, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yyvsn"]
-atlas = ExtResource("4_7ew2q")
+atlas = ExtResource("4_ebdwo")
 region = Rect2(896, 64, 128, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dckit"]
-atlas = ExtResource("4_7ew2q")
+atlas = ExtResource("4_ebdwo")
 region = Rect2(1024, 64, 128, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_po54r"]
@@ -112,7 +112,7 @@ script = ExtResource("1_po031")
 
 [node name="take_hit" type="Area2D" parent="."]
 collision_mask = 8
-script = ExtResource("2_po031")
+script = ExtResource("2_7ew2q")
 
 [node name="hit" type="Area2D" parent="take_hit"]
 collision_layer = 134217728
@@ -141,7 +141,7 @@ autoplay = "default"
 frame = 8
 frame_progress = 1.0
 
-[node name="ProgressBar" parent="take_hit" instance=ExtResource("3_m20d8")]
+[node name="ProgressBar" parent="take_hit" instance=ExtResource("5_ge1us")]
 offset_left = -3.0
 offset_top = 9.0
 offset_right = 7.0

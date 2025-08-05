@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://gioxmlwkt13h"]
 
 [ext_resource type="Script" uid="uid://sou38ji6nioe" path="res://script/mushroom.gd" id="1_hc8ei"]
-[ext_resource type="Texture2D" uid="uid://cju1iiiih8ngs" path="res://assets/Hana Caraka - Farming n Foraging [sample]/mushroom/oyster.png" id="1_uwpyk"]
+[ext_resource type="Texture2D" uid="uid://cju1iiiih8ngs" path="res://assets/Hana Caraka - Farming n Foraging [sample]/mushroom/oyster.png" id="2_b1qfp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hc8ei"]
-atlas = ExtResource("1_uwpyk")
+atlas = ExtResource("2_b1qfp")
 region = Rect2(16, 0, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_b1qfp"]

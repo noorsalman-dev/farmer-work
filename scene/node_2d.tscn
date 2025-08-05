@@ -1,49 +1,38 @@
-[gd_scene load_steps=64 format=3 uid="uid://dytjnnyegm4nb"]
+[gd_scene load_steps=53 format=3 uid="uid://dytjnnyegm4nb"]
 
-[ext_resource type="PackedScene" uid="uid://c20184mu754p4" path="res://manger/gvdeujgghgg.tscn" id="1_bapa2"]
-[ext_resource type="PackedScene" uid="uid://dju7o0la52lgl" path="res://scene/player.tscn" id="1_drhme"]
-[ext_resource type="PackedScene" uid="uid://cvrgba8na7wgg" path="res://plant/radish.tscn" id="4_3cebx"]
-[ext_resource type="PackedScene" uid="uid://bc71uwj77wxq7" path="res://scene/inventory.tscn" id="4_cxisf"]
-[ext_resource type="PackedScene" uid="uid://cwknwjx8f2pxo" path="res://scene/misc.tscn" id="4_tytcy"]
-[ext_resource type="FontFile" uid="uid://bvh4yge6us8sx" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="5_su6sf"]
-[ext_resource type="Texture2D" uid="uid://cey1w6iihsns5" path="res://assets/Cute_Fantasy_Free/Tiles/Beach_Tile.png" id="6_3u7g2"]
-[ext_resource type="PackedScene" uid="uid://hc2palenaxwi" path="res://plant/onin.tscn" id="6_su6sf"]
-[ext_resource type="Texture2D" uid="uid://bvnoykwq7yvrg" path="res://assets/Cute_Fantasy_Free/Tiles/Water_Middle.png" id="7_f08rc"]
-[ext_resource type="Texture2D" uid="uid://bc5f81dpacxcr" path="res://assets/Cute_Fantasy_Free/Tiles/Cliff_Tile.png" id="8_cxisf"]
-[ext_resource type="Texture2D" uid="uid://ciqjlot3ppx8q" path="res://assets/Cute_Fantasy_Free/Tiles/FarmLand_Tile.png" id="9_su6sf"]
-[ext_resource type="Texture2D" uid="uid://bf8viintn3qyd" path="res://assets/Cute_Fantasy_Free/Tiles/Water_Tile.png" id="10_mpuhk"]
-[ext_resource type="Texture2D" uid="uid://ce4upbxruasq7" path="res://assets/Cute_Fantasy_Free/Tiles/Grass_Middle.png" id="10_nl3on"]
-[ext_resource type="Texture2D" uid="uid://c5i23pc31d74d" path="res://assets/Cute_Fantasy_Free/Tiles/Path_Middle.png" id="11_mpuhk"]
-[ext_resource type="Texture2D" uid="uid://dle030nx1nnua" path="res://assets/Cute_Fantasy_Free/Tiles/Path_Tile.png" id="12_ssc4f"]
-[ext_resource type="Texture2D" uid="uid://boqfsv4lkca4g" path="res://assets/Farm RPG FREE 16x16 - Tiny Asset Pack/Objects/Fence's copiar.png" id="13_s0fja"]
-[ext_resource type="Texture2D" uid="uid://dydj7mn0r7ps8" path="res://assets/Farm RPG FREE 16x16 - Tiny Asset Pack/Tileset/Tileset Spring.png" id="14_el7ve"]
-[ext_resource type="PackedScene" uid="uid://dlurdwsrdnyhm" path="res://plant/turnip.tscn" id="15_qoa54"]
-[ext_resource type="Texture2D" uid="uid://bmw1gm4aihjr6" path="res://assets/Farm RPG FREE 16x16 - Tiny Asset Pack/Tileset/Walls and Floors copiar.png" id="15_yfstv"]
-[ext_resource type="PackedScene" uid="uid://6dlx0vsp8v0t" path="res://manger/game_manger.tscn" id="17_nl3on"]
-[ext_resource type="Texture2D" uid="uid://c2vammrqpcol1" path="res://assets/Cute_Fantasy_Free/coin.png" id="17_x33gs"]
-[ext_resource type="PackedScene" uid="uid://b1gsoktu5qli" path="res://manger/the.tscn" id="19_nl3on"]
-[ext_resource type="FontFile" uid="uid://b47uydvffbjbe" path="res://assets/fonts/PixelOperator8.ttf" id="20_2paaw"]
-[ext_resource type="Texture2D" uid="uid://dno3x3nffeole" path="res://assets/Cute_Fantasy_Free/Outdoor decoration/Outdoor_Decor_Free.png" id="20_yfstv"]
-[ext_resource type="PackedScene" uid="uid://b4itrxidvtqtk" path="res://manger/ggxggh.tscn" id="21_ssc4f"]
-[ext_resource type="PackedScene" uid="uid://vtss5xjyfbg" path="res://plant/potato.tscn" id="22_s0fja"]
-[ext_resource type="Texture2D" uid="uid://cve6psxys3sty" path="res://assets/Hana Caraka - Farming n Foraging [sample]/crops/onion.png" id="24_bapa2"]
-[ext_resource type="PackedScene" uid="uid://qmt6t5nc5jan" path="res://plant/carot.tscn" id="26_drt2y"]
-[ext_resource type="PackedScene" uid="uid://bkrqq48abyfxp" path="res://manger/tgzsyajuxkihnzdjdzkidk.tscn" id="28_cw5uo"]
-[ext_resource type="PackedScene" uid="uid://b0h8enkso4mpj" path="res://plant/herb.tscn" id="30_up1iy"]
-[ext_resource type="PackedScene" uid="uid://gioxmlwkt13h" path="res://plant/mushroom.tscn" id="31_6wqfp"]
-[ext_resource type="PackedScene" uid="uid://dlsj1udbikxui" path="res://plant/strawberry.tscn" id="31_p0rpq"]
-[ext_resource type="PackedScene" uid="uid://qagcxpff7d0e" path="res://plant/spanish.tscn" id="32_gyukw"]
-[ext_resource type="PackedScene" uid="uid://ck71x346508s3" path="res://plant/flour.tscn" id="33_u6kk7"]
-[ext_resource type="PackedScene" uid="uid://det4sd1gro245" path="res://plant/rose.tscn" id="33_up1iy"]
-[ext_resource type="PackedScene" uid="uid://nmqujuslov6c" path="res://plant/chicen.tscn" id="34_gbyo0"]
-[ext_resource type="PackedScene" uid="uid://kplouwfkd70q" path="res://plant/sunflower.tscn" id="34_gyukw"]
-[ext_resource type="PackedScene" uid="uid://dnx2ter237chg" path="res://plant/sheep.tscn" id="35_4irf7"]
-[ext_resource type="PackedScene" uid="uid://djf4jyucj6qg7" path="res://moster/alien.tscn" id="35_kjb27"]
-[ext_resource type="PackedScene" uid="uid://cu1yejgsdl126" path="res://plant/crop.tscn" id="37_q214a"]
-[ext_resource type="Script" uid="uid://ch040c4nu17c5" path="res://script/label.gd" id="42_4irf7"]
+[ext_resource type="Texture2D" uid="uid://cey1w6iihsns5" path="res://assets/Cute_Fantasy_Free/Tiles/Beach_Tile.png" id="1_2paaw"]
+[ext_resource type="Texture2D" uid="uid://bc5f81dpacxcr" path="res://assets/Cute_Fantasy_Free/Tiles/Cliff_Tile.png" id="2_qoa54"]
+[ext_resource type="Texture2D" uid="uid://ciqjlot3ppx8q" path="res://assets/Cute_Fantasy_Free/Tiles/FarmLand_Tile.png" id="3_dc58s"]
+[ext_resource type="Texture2D" uid="uid://ce4upbxruasq7" path="res://assets/Cute_Fantasy_Free/Tiles/Grass_Middle.png" id="4_aal8k"]
+[ext_resource type="Texture2D" uid="uid://c5i23pc31d74d" path="res://assets/Cute_Fantasy_Free/Tiles/Path_Middle.png" id="5_p0rpq"]
+[ext_resource type="Texture2D" uid="uid://dle030nx1nnua" path="res://assets/Cute_Fantasy_Free/Tiles/Path_Tile.png" id="6_gyukw"]
+[ext_resource type="Texture2D" uid="uid://bvnoykwq7yvrg" path="res://assets/Cute_Fantasy_Free/Tiles/Water_Middle.png" id="7_up1iy"]
+[ext_resource type="Texture2D" uid="uid://bf8viintn3qyd" path="res://assets/Cute_Fantasy_Free/Tiles/Water_Tile.png" id="8_6wqfp"]
+[ext_resource type="PackedScene" uid="uid://6dlx0vsp8v0t" path="res://manger/game_manger.tscn" id="9_q214a"]
+[ext_resource type="PackedScene" uid="uid://cwknwjx8f2pxo" path="res://scene/misc.tscn" id="10_u6kk7"]
+[ext_resource type="PackedScene" uid="uid://qmt6t5nc5jan" path="res://plant/carot.tscn" id="11_tht75"]
+[ext_resource type="PackedScene" uid="uid://vtss5xjyfbg" path="res://plant/potato.tscn" id="12_gbyo0"]
+[ext_resource type="PackedScene" uid="uid://cvrgba8na7wgg" path="res://plant/radish.tscn" id="13_4irf7"]
+[ext_resource type="PackedScene" uid="uid://hc2palenaxwi" path="res://plant/onin.tscn" id="14_kjb27"]
+[ext_resource type="PackedScene" uid="uid://dlurdwsrdnyhm" path="res://plant/turnip.tscn" id="15_ro4cm"]
+[ext_resource type="PackedScene" uid="uid://dlsj1udbikxui" path="res://plant/strawberry.tscn" id="16_ud6mg"]
+[ext_resource type="PackedScene" uid="uid://qagcxpff7d0e" path="res://plant/spanish.tscn" id="17_8hije"]
+[ext_resource type="PackedScene" uid="uid://dnx2ter237chg" path="res://plant/sheep.tscn" id="18_b00ov"]
+[ext_resource type="PackedScene" uid="uid://nmqujuslov6c" path="res://plant/chicen.tscn" id="19_3s6mq"]
+[ext_resource type="PackedScene" uid="uid://b0h8enkso4mpj" path="res://plant/herb.tscn" id="20_u8h3p"]
+[ext_resource type="PackedScene" uid="uid://ck71x346508s3" path="res://plant/flour.tscn" id="21_ksd61"]
+[ext_resource type="PackedScene" uid="uid://gioxmlwkt13h" path="res://plant/mushroom.tscn" id="22_0m7f8"]
+[ext_resource type="PackedScene" uid="uid://cu1yejgsdl126" path="res://plant/crop.tscn" id="23_im0yt"]
+[ext_resource type="PackedScene" uid="uid://kplouwfkd70q" path="res://plant/sunflower.tscn" id="24_onb7f"]
+[ext_resource type="PackedScene" uid="uid://det4sd1gro245" path="res://plant/rose.tscn" id="25_4gycf"]
+[ext_resource type="PackedScene" uid="uid://djf4jyucj6qg7" path="res://moster/alien.tscn" id="26_j8uf0"]
+[ext_resource type="PackedScene" uid="uid://dju7o0la52lgl" path="res://scene/player.tscn" id="27_lndjb"]
+[ext_resource type="PackedScene" uid="uid://bc71uwj77wxq7" path="res://scene/inventory.tscn" id="28_6otw7"]
+[ext_resource type="Texture2D" uid="uid://c2vammrqpcol1" path="res://assets/Cute_Fantasy_Free/coin.png" id="29_hfry4"]
+[ext_resource type="Script" uid="uid://ch040c4nu17c5" path="res://script/label.gd" id="30_rsca1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ssc4f"]
-texture = ExtResource("6_3u7g2")
+texture = ExtResource("1_2paaw")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -59,7 +48,7 @@ texture = ExtResource("6_3u7g2")
 2:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s0fja"]
-texture = ExtResource("8_cxisf")
+texture = ExtResource("2_qoa54")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -78,7 +67,7 @@ texture = ExtResource("8_cxisf")
 2:5/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_el7ve"]
-texture = ExtResource("9_su6sf")
+texture = ExtResource("3_dc58s")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -90,15 +79,15 @@ texture = ExtResource("9_su6sf")
 2:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yfstv"]
-texture = ExtResource("10_nl3on")
+texture = ExtResource("4_aal8k")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gyukw"]
-texture = ExtResource("11_mpuhk")
+texture = ExtResource("5_p0rpq")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_up1iy"]
-texture = ExtResource("12_ssc4f")
+texture = ExtResource("6_gyukw")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -117,11 +106,11 @@ texture = ExtResource("12_ssc4f")
 2:5/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6wqfp"]
-texture = ExtResource("7_f08rc")
+texture = ExtResource("7_up1iy")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q214a"]
-texture = ExtResource("10_mpuhk")
+texture = ExtResource("8_6wqfp")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -150,7 +139,7 @@ sources/6 = SubResource("TileSetAtlasSource_6wqfp")
 sources/7 = SubResource("TileSetAtlasSource_q214a")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bapa2"]
-texture = ExtResource("6_3u7g2")
+texture = ExtResource("1_2paaw")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -166,11 +155,11 @@ texture = ExtResource("6_3u7g2")
 2:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_drt2y"]
-texture = ExtResource("7_f08rc")
+texture = ExtResource("7_up1iy")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5n7tr"]
-texture = ExtResource("8_cxisf")
+texture = ExtResource("2_qoa54")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -189,7 +178,7 @@ texture = ExtResource("8_cxisf")
 2:5/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cw5uo"]
-texture = ExtResource("9_su6sf")
+texture = ExtResource("3_dc58s")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -201,15 +190,15 @@ texture = ExtResource("9_su6sf")
 2:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x33gs"]
-texture = ExtResource("10_nl3on")
+texture = ExtResource("4_aal8k")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2paaw"]
-texture = ExtResource("11_mpuhk")
+texture = ExtResource("5_p0rpq")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qoa54"]
-texture = ExtResource("12_ssc4f")
+texture = ExtResource("6_gyukw")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -228,7 +217,6 @@ texture = ExtResource("12_ssc4f")
 2:5/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dc58s"]
-texture = ExtResource("13_s0fja")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -256,7 +244,6 @@ texture = ExtResource("13_s0fja")
 2:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-2.87774, -8, 8, -8, 8, 8, -3.23746, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aal8k"]
-texture = ExtResource("14_el7ve")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -493,7 +480,6 @@ texture = ExtResource("14_el7ve")
 11:19/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p0rpq"]
-texture = ExtResource("15_yfstv")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -586,104 +572,89 @@ layer_0/tile_data = PackedInt32Array(65526, 3, 0, 65527, 5, 1, 131063, 5, 1, 131
 
 [node name="Node" type="Node" parent="."]
 
-[node name="game_manger" parent="Node" instance=ExtResource("17_nl3on")]
-unique_name_in_owner = true
-
-[node name="tgzsyajuxkihnzdjdzkidk" parent="Node" instance=ExtResource("28_cw5uo")]
-unique_name_in_owner = true
-
-[node name="the" parent="Node" instance=ExtResource("19_nl3on")]
+[node name="game_manger" parent="Node" instance=ExtResource("9_q214a")]
 unique_name_in_owner = true
 
 [node name="onin" type="Node" parent="Node"]
 
 [node name="slime" type="Node" parent="Node"]
 
-[node name="ggxggh" parent="Node" instance=ExtResource("21_ssc4f")]
-unique_name_in_owner = true
-
-[node name="gvdeujgghgg" parent="Node" instance=ExtResource("1_bapa2")]
-unique_name_in_owner = true
-
 [node name="misk" type="Node" parent="Node"]
 
 [node name="radish" type="Node" parent="Node"]
-
-[node name="ggxggh2" parent="Node" instance=ExtResource("21_ssc4f")]
-unique_name_in_owner = true
 
 [node name="Node2D2" type="Node2D" parent="."]
 
 [node name="misk2" type="Node2D" parent="Node2D2"]
 
-[node name="Misc2" parent="Node2D2/misk2" instance=ExtResource("4_tytcy")]
+[node name="Misc2" parent="Node2D2/misk2" instance=ExtResource("10_u6kk7")]
 position = Vector2(147, 110)
 
-[node name="Misc" parent="Node2D2/misk2" instance=ExtResource("4_tytcy")]
+[node name="Misc" parent="Node2D2/misk2" instance=ExtResource("10_u6kk7")]
 position = Vector2(-88, -33)
 
-[node name="Misc3" parent="Node2D2/misk2" instance=ExtResource("4_tytcy")]
+[node name="Misc3" parent="Node2D2/misk2" instance=ExtResource("10_u6kk7")]
 position = Vector2(20, 54)
 
-[node name="Misc4" parent="Node2D2/misk2" instance=ExtResource("4_tytcy")]
+[node name="Misc4" parent="Node2D2/misk2" instance=ExtResource("10_u6kk7")]
 position = Vector2(369, -168)
 
-[node name="Misc5" parent="Node2D2/misk2" instance=ExtResource("4_tytcy")]
+[node name="Misc5" parent="Node2D2/misk2" instance=ExtResource("10_u6kk7")]
 position = Vector2(416, -168)
 
-[node name="Misc6" parent="Node2D2/misk2" instance=ExtResource("4_tytcy")]
+[node name="Misc6" parent="Node2D2/misk2" instance=ExtResource("10_u6kk7")]
 position = Vector2(369, -92)
 
-[node name="Misc7" parent="Node2D2/misk2" instance=ExtResource("4_tytcy")]
+[node name="Misc7" parent="Node2D2/misk2" instance=ExtResource("10_u6kk7")]
 position = Vector2(417, -92)
 
 [node name="Node2D" type="Node2D" parent="Node2D2"]
 
-[node name="carot" parent="Node2D2/Node2D" instance=ExtResource("26_drt2y")]
+[node name="carot" parent="Node2D2/Node2D" instance=ExtResource("11_tht75")]
 position = Vector2(3, 103)
 
-[node name="carot2" parent="Node2D2/Node2D" instance=ExtResource("26_drt2y")]
+[node name="carot2" parent="Node2D2/Node2D" instance=ExtResource("11_tht75")]
 position = Vector2(-11, 87)
 
-[node name="carot3" parent="Node2D2/Node2D" instance=ExtResource("26_drt2y")]
+[node name="carot3" parent="Node2D2/Node2D" instance=ExtResource("11_tht75")]
 position = Vector2(337, -164)
 
-[node name="carot4" parent="Node2D2/Node2D" instance=ExtResource("26_drt2y")]
+[node name="carot4" parent="Node2D2/Node2D" instance=ExtResource("11_tht75")]
 position = Vector2(353, -166)
 
-[node name="carot5" parent="Node2D2/Node2D" instance=ExtResource("26_drt2y")]
+[node name="carot5" parent="Node2D2/Node2D" instance=ExtResource("11_tht75")]
 position = Vector2(336, -151)
 
-[node name="carot6" parent="Node2D2/Node2D" instance=ExtResource("26_drt2y")]
+[node name="carot6" parent="Node2D2/Node2D" instance=ExtResource("11_tht75")]
 position = Vector2(352, -150)
 
-[node name="carot7" parent="Node2D2/Node2D" instance=ExtResource("26_drt2y")]
+[node name="carot7" parent="Node2D2/Node2D" instance=ExtResource("11_tht75")]
 position = Vector2(335, -134)
 
-[node name="carot8" parent="Node2D2/Node2D" instance=ExtResource("26_drt2y")]
+[node name="carot8" parent="Node2D2/Node2D" instance=ExtResource("11_tht75")]
 position = Vector2(354, -137)
 
 [node name="Node2D2" type="Node2D" parent="Node2D2"]
 
-[node name="potato" parent="Node2D2/Node2D2" instance=ExtResource("22_s0fja")]
+[node name="potato" parent="Node2D2/Node2D2" instance=ExtResource("12_gbyo0")]
 position = Vector2(20, 115)
 
-[node name="potato2" parent="Node2D2/Node2D2" instance=ExtResource("22_s0fja")]
+[node name="potato2" parent="Node2D2/Node2D2" instance=ExtResource("12_gbyo0")]
 position = Vector2(370, -89)
 
-[node name="potato3" parent="Node2D2/Node2D2" instance=ExtResource("22_s0fja")]
+[node name="potato3" parent="Node2D2/Node2D2" instance=ExtResource("12_gbyo0")]
 position = Vector2(370, -118)
 
-[node name="potato4" parent="Node2D2/Node2D2" instance=ExtResource("22_s0fja")]
+[node name="potato4" parent="Node2D2/Node2D2" instance=ExtResource("12_gbyo0")]
 position = Vector2(369, -106)
 
-[node name="potato5" parent="Node2D2/Node2D2" instance=ExtResource("22_s0fja")]
+[node name="potato5" parent="Node2D2/Node2D2" instance=ExtResource("12_gbyo0")]
 position = Vector2(385, -89)
 
-[node name="potato6" parent="Node2D2/Node2D2" instance=ExtResource("22_s0fja")]
+[node name="potato6" parent="Node2D2/Node2D2" instance=ExtResource("12_gbyo0")]
 position = Vector2(383, -120)
 
-[node name="potato7" parent="Node2D2/Node2D2" instance=ExtResource("22_s0fja")]
+[node name="potato7" parent="Node2D2/Node2D2" instance=ExtResource("12_gbyo0")]
 position = Vector2(384, -106)
 
 [node name="Node2D3" type="Node2D" parent="Node2D2"]
@@ -692,7 +663,6 @@ position = Vector2(12.84, -7.05)
 [node name="OutdoorDecorFree" type="Sprite2D" parent="Node2D2/Node2D3"]
 position = Vector2(140, 76)
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("20_yfstv")
 region_enabled = true
 region_rect = Rect2(48.6667, 0.499559, 16, 15.1671)
 
@@ -700,460 +670,459 @@ region_rect = Rect2(48.6667, 0.499559, 16, 15.1671)
 position = Vector2(142, 75)
 rotation = 1.5708
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("24_bapa2")
 region_enabled = true
 region_rect = Rect2(15.5557, 10.889, 19.5556, 22.6667)
 
 [node name="radish2" type="Node2D" parent="Node2D2"]
 
-[node name="radish2" parent="Node2D2/radish2" instance=ExtResource("4_3cebx")]
+[node name="radish2" parent="Node2D2/radish2" instance=ExtResource("13_4irf7")]
 position = Vector2(-120, -33)
 
-[node name="radish3" parent="Node2D2/radish2" instance=ExtResource("4_3cebx")]
+[node name="radish3" parent="Node2D2/radish2" instance=ExtResource("13_4irf7")]
 position = Vector2(-105, -31)
 
-[node name="radish4" parent="Node2D2/radish2" instance=ExtResource("4_3cebx")]
+[node name="radish4" parent="Node2D2/radish2" instance=ExtResource("13_4irf7")]
 position = Vector2(-89, -32)
 
-[node name="radish5" parent="Node2D2/radish2" instance=ExtResource("4_3cebx")]
+[node name="radish5" parent="Node2D2/radish2" instance=ExtResource("13_4irf7")]
 position = Vector2(-121, -19)
 
-[node name="radish6" parent="Node2D2/radish2" instance=ExtResource("4_3cebx")]
+[node name="radish6" parent="Node2D2/radish2" instance=ExtResource("13_4irf7")]
 position = Vector2(-104, -19)
 
-[node name="radish7" parent="Node2D2/radish2" instance=ExtResource("4_3cebx")]
+[node name="radish7" parent="Node2D2/radish2" instance=ExtResource("13_4irf7")]
 position = Vector2(-87, -18)
 
-[node name="radish8" parent="Node2D2/radish2" instance=ExtResource("4_3cebx")]
+[node name="radish8" parent="Node2D2/radish2" instance=ExtResource("13_4irf7")]
 position = Vector2(-121, -1)
 
-[node name="radish" parent="Node2D2/radish2" instance=ExtResource("4_3cebx")]
+[node name="radish" parent="Node2D2/radish2" instance=ExtResource("13_4irf7")]
 position = Vector2(-87, -1)
 
-[node name="radish9" parent="Node2D2/radish2" instance=ExtResource("4_3cebx")]
+[node name="radish9" parent="Node2D2/radish2" instance=ExtResource("13_4irf7")]
 position = Vector2(-105, 0)
 
-[node name="radish10" parent="Node2D2/radish2" instance=ExtResource("4_3cebx")]
+[node name="radish10" parent="Node2D2/radish2" instance=ExtResource("13_4irf7")]
 position = Vector2(-87, 14)
 
-[node name="radish11" parent="Node2D2/radish2" instance=ExtResource("4_3cebx")]
+[node name="radish11" parent="Node2D2/radish2" instance=ExtResource("13_4irf7")]
 position = Vector2(-104, 14)
 
-[node name="radish12" parent="Node2D2/radish2" instance=ExtResource("4_3cebx")]
+[node name="radish12" parent="Node2D2/radish2" instance=ExtResource("13_4irf7")]
 position = Vector2(-119, 13)
 
-[node name="radish13" parent="Node2D2/radish2" instance=ExtResource("4_3cebx")]
+[node name="radish13" parent="Node2D2/radish2" instance=ExtResource("13_4irf7")]
 position = Vector2(-89, 28)
 
-[node name="radish14" parent="Node2D2/radish2" instance=ExtResource("4_3cebx")]
+[node name="radish14" parent="Node2D2/radish2" instance=ExtResource("13_4irf7")]
 position = Vector2(-105, 28)
 
-[node name="radish15" parent="Node2D2/radish2" instance=ExtResource("4_3cebx")]
+[node name="radish15" parent="Node2D2/radish2" instance=ExtResource("13_4irf7")]
 position = Vector2(-120, 28)
 
-[node name="radish16" parent="Node2D2/radish2" instance=ExtResource("4_3cebx")]
+[node name="radish16" parent="Node2D2/radish2" instance=ExtResource("13_4irf7")]
 position = Vector2(5, 71)
 
-[node name="radish17" parent="Node2D2/radish2" instance=ExtResource("4_3cebx")]
+[node name="radish17" parent="Node2D2/radish2" instance=ExtResource("13_4irf7")]
 position = Vector2(-11, 71)
 
-[node name="radish18" parent="Node2D2/radish2" instance=ExtResource("4_3cebx")]
+[node name="radish18" parent="Node2D2/radish2" instance=ExtResource("13_4irf7")]
 position = Vector2(400, -120)
 
-[node name="radish19" parent="Node2D2/radish2" instance=ExtResource("4_3cebx")]
+[node name="radish19" parent="Node2D2/radish2" instance=ExtResource("13_4irf7")]
 position = Vector2(401, -106)
 
-[node name="radish20" parent="Node2D2/radish2" instance=ExtResource("4_3cebx")]
+[node name="radish20" parent="Node2D2/radish2" instance=ExtResource("13_4irf7")]
 position = Vector2(402, -91)
 
-[node name="radish21" parent="Node2D2/radish2" instance=ExtResource("4_3cebx")]
+[node name="radish21" parent="Node2D2/radish2" instance=ExtResource("13_4irf7")]
 position = Vector2(415, -119)
 
-[node name="radish22" parent="Node2D2/radish2" instance=ExtResource("4_3cebx")]
+[node name="radish22" parent="Node2D2/radish2" instance=ExtResource("13_4irf7")]
 position = Vector2(415, -105)
 
-[node name="radish23" parent="Node2D2/radish2" instance=ExtResource("4_3cebx")]
+[node name="radish23" parent="Node2D2/radish2" instance=ExtResource("13_4irf7")]
 position = Vector2(417, -90)
 
 [node name="onin2" type="Node2D" parent="Node2D2"]
 
-[node name="onin" parent="Node2D2/onin2" instance=ExtResource("6_su6sf")]
+[node name="onin" parent="Node2D2/onin2" instance=ExtResource("14_kjb27")]
 position = Vector2(115, 114)
 
-[node name="onin2" parent="Node2D2/onin2" instance=ExtResource("6_su6sf")]
+[node name="onin2" parent="Node2D2/onin2" instance=ExtResource("14_kjb27")]
 position = Vector2(130, 115)
 
-[node name="onin3" parent="Node2D2/onin2" instance=ExtResource("6_su6sf")]
+[node name="onin3" parent="Node2D2/onin2" instance=ExtResource("14_kjb27")]
 position = Vector2(147, 115)
 
-[node name="onin4" parent="Node2D2/onin2" instance=ExtResource("6_su6sf")]
+[node name="onin4" parent="Node2D2/onin2" instance=ExtResource("14_kjb27")]
 position = Vector2(116, 145)
 
-[node name="onin5" parent="Node2D2/onin2" instance=ExtResource("6_su6sf")]
+[node name="onin5" parent="Node2D2/onin2" instance=ExtResource("14_kjb27")]
 position = Vector2(116, 131)
 
-[node name="onin6" parent="Node2D2/onin2" instance=ExtResource("6_su6sf")]
+[node name="onin6" parent="Node2D2/onin2" instance=ExtResource("14_kjb27")]
 position = Vector2(132, 129)
 
-[node name="onin7" parent="Node2D2/onin2" instance=ExtResource("6_su6sf")]
+[node name="onin7" parent="Node2D2/onin2" instance=ExtResource("14_kjb27")]
 position = Vector2(114, 160)
 
-[node name="onin8" parent="Node2D2/onin2" instance=ExtResource("6_su6sf")]
+[node name="onin8" parent="Node2D2/onin2" instance=ExtResource("14_kjb27")]
 position = Vector2(131, 145)
 
-[node name="onin9" parent="Node2D2/onin2" instance=ExtResource("6_su6sf")]
+[node name="onin9" parent="Node2D2/onin2" instance=ExtResource("14_kjb27")]
 position = Vector2(116, 174)
 
-[node name="onin10" parent="Node2D2/onin2" instance=ExtResource("6_su6sf")]
+[node name="onin10" parent="Node2D2/onin2" instance=ExtResource("14_kjb27")]
 position = Vector2(147, 177)
 
-[node name="onin11" parent="Node2D2/onin2" instance=ExtResource("6_su6sf")]
+[node name="onin11" parent="Node2D2/onin2" instance=ExtResource("14_kjb27")]
 position = Vector2(147, 163)
 
-[node name="onin12" parent="Node2D2/onin2" instance=ExtResource("6_su6sf")]
+[node name="onin12" parent="Node2D2/onin2" instance=ExtResource("14_kjb27")]
 position = Vector2(131, 161)
 
-[node name="onin13" parent="Node2D2/onin2" instance=ExtResource("6_su6sf")]
+[node name="onin13" parent="Node2D2/onin2" instance=ExtResource("14_kjb27")]
 position = Vector2(131, 176)
 
-[node name="onin14" parent="Node2D2/onin2" instance=ExtResource("6_su6sf")]
+[node name="onin14" parent="Node2D2/onin2" instance=ExtResource("14_kjb27")]
 position = Vector2(147, 146)
 
-[node name="onin15" parent="Node2D2/onin2" instance=ExtResource("6_su6sf")]
+[node name="onin15" parent="Node2D2/onin2" instance=ExtResource("14_kjb27")]
 position = Vector2(147, 129)
 
-[node name="onin16" parent="Node2D2/onin2" instance=ExtResource("6_su6sf")]
+[node name="onin16" parent="Node2D2/onin2" instance=ExtResource("14_kjb27")]
 position = Vector2(336, -119)
 
-[node name="onin17" parent="Node2D2/onin2" instance=ExtResource("6_su6sf")]
+[node name="onin17" parent="Node2D2/onin2" instance=ExtResource("14_kjb27")]
 position = Vector2(353, -119)
 
-[node name="onin18" parent="Node2D2/onin2" instance=ExtResource("6_su6sf")]
+[node name="onin18" parent="Node2D2/onin2" instance=ExtResource("14_kjb27")]
 position = Vector2(336, -104)
 
-[node name="onin19" parent="Node2D2/onin2" instance=ExtResource("6_su6sf")]
+[node name="onin19" parent="Node2D2/onin2" instance=ExtResource("14_kjb27")]
 position = Vector2(337, -89)
 
-[node name="onin20" parent="Node2D2/onin2" instance=ExtResource("6_su6sf")]
+[node name="onin20" parent="Node2D2/onin2" instance=ExtResource("14_kjb27")]
 position = Vector2(353, -103)
 
-[node name="onin21" parent="Node2D2/onin2" instance=ExtResource("6_su6sf")]
+[node name="onin21" parent="Node2D2/onin2" instance=ExtResource("14_kjb27")]
 position = Vector2(353, -89)
 
 [node name="Node2D5" type="Node2D" parent="Node2D2"]
 
-[node name="turnip" parent="Node2D2/Node2D5" instance=ExtResource("15_qoa54")]
+[node name="turnip" parent="Node2D2/Node2D5" instance=ExtResource("15_ro4cm")]
 position = Vector2(20, 90)
 
-[node name="turnip2" parent="Node2D2/Node2D5" instance=ExtResource("15_qoa54")]
+[node name="turnip2" parent="Node2D2/Node2D5" instance=ExtResource("15_ro4cm")]
 position = Vector2(4, 89)
 
-[node name="turnip3" parent="Node2D2/Node2D5" instance=ExtResource("15_qoa54")]
+[node name="turnip3" parent="Node2D2/Node2D5" instance=ExtResource("15_ro4cm")]
 position = Vector2(416, -27)
 
-[node name="turnip4" parent="Node2D2/Node2D5" instance=ExtResource("15_qoa54")]
+[node name="turnip4" parent="Node2D2/Node2D5" instance=ExtResource("15_ro4cm")]
 position = Vector2(401, -26)
 
-[node name="turnip5" parent="Node2D2/Node2D5" instance=ExtResource("15_qoa54")]
+[node name="turnip5" parent="Node2D2/Node2D5" instance=ExtResource("15_ro4cm")]
 position = Vector2(385, -26)
 
 [node name="Node2D6" type="Node2D" parent="Node2D2"]
 position = Vector2(19, 57)
 
-[node name="strawberry" parent="Node2D2/Node2D6" instance=ExtResource("31_p0rpq")]
+[node name="strawberry" parent="Node2D2/Node2D6" instance=ExtResource("16_ud6mg")]
 position = Vector2(-33, 42)
 
-[node name="strawberry2" parent="Node2D2/Node2D6" instance=ExtResource("31_p0rpq")]
+[node name="strawberry2" parent="Node2D2/Node2D6" instance=ExtResource("16_ud6mg")]
 position = Vector2(-32, 54)
 
-[node name="strawberry3" parent="Node2D2/Node2D6" instance=ExtResource("31_p0rpq")]
+[node name="strawberry3" parent="Node2D2/Node2D6" instance=ExtResource("16_ud6mg")]
 position = Vector2(382, -134)
 
-[node name="strawberry4" parent="Node2D2/Node2D6" instance=ExtResource("31_p0rpq")]
+[node name="strawberry4" parent="Node2D2/Node2D6" instance=ExtResource("16_ud6mg")]
 position = Vector2(395, -132)
 
-[node name="strawberry5" parent="Node2D2/Node2D6" instance=ExtResource("31_p0rpq")]
+[node name="strawberry5" parent="Node2D2/Node2D6" instance=ExtResource("16_ud6mg")]
 position = Vector2(384, -119)
 
-[node name="strawberry6" parent="Node2D2/Node2D6" instance=ExtResource("31_p0rpq")]
+[node name="strawberry6" parent="Node2D2/Node2D6" instance=ExtResource("16_ud6mg")]
 position = Vector2(397, -119)
 
-[node name="strawberry7" parent="Node2D2/Node2D6" instance=ExtResource("31_p0rpq")]
+[node name="strawberry7" parent="Node2D2/Node2D6" instance=ExtResource("16_ud6mg")]
 position = Vector2(380, -106)
 
-[node name="strawberry8" parent="Node2D2/Node2D6" instance=ExtResource("31_p0rpq")]
+[node name="strawberry8" parent="Node2D2/Node2D6" instance=ExtResource("16_ud6mg")]
 position = Vector2(397, -103)
 
 [node name="Node2D7" type="Node2D" parent="Node2D2"]
 
-[node name="spanish" parent="Node2D2/Node2D7" instance=ExtResource("32_gyukw")]
+[node name="spanish" parent="Node2D2/Node2D7" instance=ExtResource("17_8hije")]
 position = Vector2(20, 103)
 
-[node name="spanish2" parent="Node2D2/Node2D7" instance=ExtResource("32_gyukw")]
+[node name="spanish2" parent="Node2D2/Node2D7" instance=ExtResource("17_8hije")]
 position = Vector2(370, -72)
 
-[node name="spanish3" parent="Node2D2/Node2D7" instance=ExtResource("32_gyukw")]
+[node name="spanish3" parent="Node2D2/Node2D7" instance=ExtResource("17_8hije")]
 position = Vector2(370, -57)
 
-[node name="spanish4" parent="Node2D2/Node2D7" instance=ExtResource("32_gyukw")]
+[node name="spanish4" parent="Node2D2/Node2D7" instance=ExtResource("17_8hije")]
 position = Vector2(370, -42)
 
-[node name="spanish5" parent="Node2D2/Node2D7" instance=ExtResource("32_gyukw")]
+[node name="spanish5" parent="Node2D2/Node2D7" instance=ExtResource("17_8hije")]
 position = Vector2(387, -70)
 
-[node name="spanish6" parent="Node2D2/Node2D7" instance=ExtResource("32_gyukw")]
+[node name="spanish6" parent="Node2D2/Node2D7" instance=ExtResource("17_8hije")]
 position = Vector2(386, -56)
 
-[node name="spanish7" parent="Node2D2/Node2D7" instance=ExtResource("32_gyukw")]
+[node name="spanish7" parent="Node2D2/Node2D7" instance=ExtResource("17_8hije")]
 position = Vector2(385, -42)
 
 [node name="Node2D4" type="Node2D" parent="Node2D2"]
 
 [node name="sheep7" type="Node2D" parent="Node2D2"]
 
-[node name="sheep8" parent="Node2D2/sheep7" instance=ExtResource("35_4irf7")]
+[node name="sheep8" parent="Node2D2/sheep7" instance=ExtResource("18_b00ov")]
 position = Vector2(906, -417)
 
-[node name="sheep7" parent="Node2D2/sheep7" instance=ExtResource("35_4irf7")]
+[node name="sheep7" parent="Node2D2/sheep7" instance=ExtResource("18_b00ov")]
 position = Vector2(865, -418)
 
-[node name="sheep" parent="Node2D2/sheep7" instance=ExtResource("35_4irf7")]
+[node name="sheep" parent="Node2D2/sheep7" instance=ExtResource("18_b00ov")]
 position = Vector2(906, -366)
 
-[node name="sheep2" parent="Node2D2/sheep7" instance=ExtResource("35_4irf7")]
+[node name="sheep2" parent="Node2D2/sheep7" instance=ExtResource("18_b00ov")]
 position = Vector2(925, -399)
 
-[node name="sheep3" parent="Node2D2/sheep7" instance=ExtResource("35_4irf7")]
+[node name="sheep3" parent="Node2D2/sheep7" instance=ExtResource("18_b00ov")]
 position = Vector2(836, -405)
 
-[node name="sheep4" parent="Node2D2/sheep7" instance=ExtResource("35_4irf7")]
+[node name="sheep4" parent="Node2D2/sheep7" instance=ExtResource("18_b00ov")]
 position = Vector2(834, -371)
 
-[node name="sheep5" parent="Node2D2/sheep7" instance=ExtResource("35_4irf7")]
+[node name="sheep5" parent="Node2D2/sheep7" instance=ExtResource("18_b00ov")]
 position = Vector2(862, -388)
 
-[node name="sheep6" parent="Node2D2/sheep7" instance=ExtResource("35_4irf7")]
+[node name="sheep6" parent="Node2D2/sheep7" instance=ExtResource("18_b00ov")]
 position = Vector2(842, -420)
 
-[node name="sheep9" parent="Node2D2/sheep7" instance=ExtResource("35_4irf7")]
+[node name="sheep9" parent="Node2D2/sheep7" instance=ExtResource("18_b00ov")]
 position = Vector2(944, -374)
 
-[node name="sheep10" parent="Node2D2/sheep7" instance=ExtResource("35_4irf7")]
+[node name="sheep10" parent="Node2D2/sheep7" instance=ExtResource("18_b00ov")]
 position = Vector2(947, -416)
 
 [node name="Node2D8" type="Node2D" parent="Node2D2"]
 
-[node name="chicen" parent="Node2D2/Node2D8" instance=ExtResource("34_gbyo0")]
+[node name="chicen" parent="Node2D2/Node2D8" instance=ExtResource("19_3s6mq")]
 position = Vector2(1064, -392)
 
-[node name="chicen2" parent="Node2D2/Node2D8" instance=ExtResource("34_gbyo0")]
+[node name="chicen2" parent="Node2D2/Node2D8" instance=ExtResource("19_3s6mq")]
 position = Vector2(1125, -419)
 
-[node name="chicen3" parent="Node2D2/Node2D8" instance=ExtResource("34_gbyo0")]
+[node name="chicen3" parent="Node2D2/Node2D8" instance=ExtResource("19_3s6mq")]
 position = Vector2(1095, -419)
 
-[node name="chicen4" parent="Node2D2/Node2D8" instance=ExtResource("34_gbyo0")]
+[node name="chicen4" parent="Node2D2/Node2D8" instance=ExtResource("19_3s6mq")]
 position = Vector2(1095, -357)
 
-[node name="chicen5" parent="Node2D2/Node2D8" instance=ExtResource("34_gbyo0")]
+[node name="chicen5" parent="Node2D2/Node2D8" instance=ExtResource("19_3s6mq")]
 position = Vector2(1064, -362)
 
-[node name="chicen6" parent="Node2D2/Node2D8" instance=ExtResource("34_gbyo0")]
+[node name="chicen6" parent="Node2D2/Node2D8" instance=ExtResource("19_3s6mq")]
 position = Vector2(1097, -399)
 
-[node name="chicen7" parent="Node2D2/Node2D8" instance=ExtResource("34_gbyo0")]
+[node name="chicen7" parent="Node2D2/Node2D8" instance=ExtResource("19_3s6mq")]
 position = Vector2(-1358, 191)
 
-[node name="chicen8" parent="Node2D2/Node2D8" instance=ExtResource("34_gbyo0")]
+[node name="chicen8" parent="Node2D2/Node2D8" instance=ExtResource("19_3s6mq")]
 position = Vector2(1062, -415)
 
-[node name="chicen9" parent="Node2D2/Node2D8" instance=ExtResource("34_gbyo0")]
+[node name="chicen9" parent="Node2D2/Node2D8" instance=ExtResource("19_3s6mq")]
 position = Vector2(1014, -354)
 
-[node name="chicen10" parent="Node2D2/Node2D8" instance=ExtResource("34_gbyo0")]
+[node name="chicen10" parent="Node2D2/Node2D8" instance=ExtResource("19_3s6mq")]
 position = Vector2(1027, -352)
 
-[node name="chicen11" parent="Node2D2/Node2D8" instance=ExtResource("34_gbyo0")]
+[node name="chicen11" parent="Node2D2/Node2D8" instance=ExtResource("19_3s6mq")]
 position = Vector2(1016, -417)
 
-[node name="chicen12" parent="Node2D2/Node2D8" instance=ExtResource("34_gbyo0")]
+[node name="chicen12" parent="Node2D2/Node2D8" instance=ExtResource("19_3s6mq")]
 position = Vector2(1034, -405)
 
-[node name="chicen13" parent="Node2D2/Node2D8" instance=ExtResource("34_gbyo0")]
+[node name="chicen13" parent="Node2D2/Node2D8" instance=ExtResource("19_3s6mq")]
 position = Vector2(1013, -397)
 
-[node name="chicen14" parent="Node2D2/Node2D8" instance=ExtResource("34_gbyo0")]
+[node name="chicen14" parent="Node2D2/Node2D8" instance=ExtResource("19_3s6mq")]
 position = Vector2(1128, -359)
 
-[node name="chicen15" parent="Node2D2/Node2D8" instance=ExtResource("34_gbyo0")]
+[node name="chicen15" parent="Node2D2/Node2D8" instance=ExtResource("19_3s6mq")]
 position = Vector2(1129, -392)
 
-[node name="chicen16" parent="Node2D2/Node2D8" instance=ExtResource("34_gbyo0")]
+[node name="chicen16" parent="Node2D2/Node2D8" instance=ExtResource("19_3s6mq")]
 position = Vector2(1155, -420)
 
-[node name="chicen17" parent="Node2D2/Node2D8" instance=ExtResource("34_gbyo0")]
+[node name="chicen17" parent="Node2D2/Node2D8" instance=ExtResource("19_3s6mq")]
 position = Vector2(1157, -401)
 
-[node name="chicen18" parent="Node2D2/Node2D8" instance=ExtResource("34_gbyo0")]
+[node name="chicen18" parent="Node2D2/Node2D8" instance=ExtResource("19_3s6mq")]
 position = Vector2(1158, -355)
 
 [node name="Node2D9" type="Node2D" parent="Node2D2"]
 
-[node name="herb" parent="Node2D2/Node2D9" instance=ExtResource("30_up1iy")]
+[node name="herb" parent="Node2D2/Node2D9" instance=ExtResource("20_u8h3p")]
 position = Vector2(100, 0)
 
-[node name="herb2" parent="Node2D2/Node2D9" instance=ExtResource("30_up1iy")]
+[node name="herb2" parent="Node2D2/Node2D9" instance=ExtResource("20_u8h3p")]
 position = Vector2(-376, -268)
 
-[node name="herb3" parent="Node2D2/Node2D9" instance=ExtResource("30_up1iy")]
+[node name="herb3" parent="Node2D2/Node2D9" instance=ExtResource("20_u8h3p")]
 position = Vector2(-864, 328)
 
-[node name="herb4" parent="Node2D2/Node2D9" instance=ExtResource("30_up1iy")]
+[node name="herb4" parent="Node2D2/Node2D9" instance=ExtResource("20_u8h3p")]
 position = Vector2(927, -258)
 
-[node name="herb5" parent="Node2D2/Node2D9" instance=ExtResource("30_up1iy")]
+[node name="herb5" parent="Node2D2/Node2D9" instance=ExtResource("20_u8h3p")]
 position = Vector2(643, 122)
 
 [node name="Node2D10" type="Node2D" parent="Node2D2"]
 
-[node name="flour" parent="Node2D2/Node2D10" instance=ExtResource("33_u6kk7")]
+[node name="flour" parent="Node2D2/Node2D10" instance=ExtResource("21_ksd61")]
 position = Vector2(3, 60)
 
-[node name="flour2" parent="Node2D2/Node2D10" instance=ExtResource("33_u6kk7")]
+[node name="flour2" parent="Node2D2/Node2D10" instance=ExtResource("21_ksd61")]
 position = Vector2(399, -161)
 
-[node name="flour3" parent="Node2D2/Node2D10" instance=ExtResource("33_u6kk7")]
+[node name="flour3" parent="Node2D2/Node2D10" instance=ExtResource("21_ksd61")]
 position = Vector2(400, -145)
 
-[node name="flour4" parent="Node2D2/Node2D10" instance=ExtResource("33_u6kk7")]
+[node name="flour4" parent="Node2D2/Node2D10" instance=ExtResource("21_ksd61")]
 position = Vector2(399, -130)
 
-[node name="flour5" parent="Node2D2/Node2D10" instance=ExtResource("33_u6kk7")]
+[node name="flour5" parent="Node2D2/Node2D10" instance=ExtResource("21_ksd61")]
 position = Vector2(416, -132)
 
-[node name="flour6" parent="Node2D2/Node2D10" instance=ExtResource("33_u6kk7")]
+[node name="flour6" parent="Node2D2/Node2D10" instance=ExtResource("21_ksd61")]
 position = Vector2(415, -147)
 
-[node name="flour7" parent="Node2D2/Node2D10" instance=ExtResource("33_u6kk7")]
+[node name="flour7" parent="Node2D2/Node2D10" instance=ExtResource("21_ksd61")]
 position = Vector2(414, -162)
 
 [node name="Node2D11" type="Node2D" parent="Node2D2"]
 position = Vector2(3, 60)
 
-[node name="mushroom" parent="Node2D2/Node2D11" instance=ExtResource("31_6wqfp")]
+[node name="mushroom" parent="Node2D2/Node2D11" instance=ExtResource("22_0m7f8")]
 position = Vector2(93, -87)
 
 [node name="Node2D12" type="Node2D" parent="Node2D2"]
 
-[node name="crop" parent="Node2D2/Node2D12" instance=ExtResource("37_q214a")]
+[node name="crop" parent="Node2D2/Node2D12" instance=ExtResource("23_im0yt")]
 position = Vector2(-13, 59)
 
-[node name="crop2" parent="Node2D2/Node2D12" instance=ExtResource("37_q214a")]
+[node name="crop2" parent="Node2D2/Node2D12" instance=ExtResource("23_im0yt")]
 position = Vector2(371, -167)
 
-[node name="crop3" parent="Node2D2/Node2D12" instance=ExtResource("37_q214a")]
+[node name="crop3" parent="Node2D2/Node2D12" instance=ExtResource("23_im0yt")]
 position = Vector2(368, -150)
 
-[node name="crop4" parent="Node2D2/Node2D12" instance=ExtResource("37_q214a")]
+[node name="crop4" parent="Node2D2/Node2D12" instance=ExtResource("23_im0yt")]
 position = Vector2(367, -137)
 
-[node name="crop5" parent="Node2D2/Node2D12" instance=ExtResource("37_q214a")]
+[node name="crop5" parent="Node2D2/Node2D12" instance=ExtResource("23_im0yt")]
 position = Vector2(383, -136)
 
-[node name="crop6" parent="Node2D2/Node2D12" instance=ExtResource("37_q214a")]
+[node name="crop6" parent="Node2D2/Node2D12" instance=ExtResource("23_im0yt")]
 position = Vector2(384, -152)
 
-[node name="crop7" parent="Node2D2/Node2D12" instance=ExtResource("37_q214a")]
+[node name="crop7" parent="Node2D2/Node2D12" instance=ExtResource("23_im0yt")]
 position = Vector2(382, -166)
 
 [node name="Node2D13" type="Node2D" parent="Node2D2"]
 
-[node name="sunflower" parent="Node2D2/Node2D13" instance=ExtResource("34_gyukw")]
+[node name="sunflower" parent="Node2D2/Node2D13" instance=ExtResource("24_onb7f")]
 position = Vector2(19, 57)
 
-[node name="sunflower2" parent="Node2D2/Node2D13" instance=ExtResource("34_gyukw")]
+[node name="sunflower2" parent="Node2D2/Node2D13" instance=ExtResource("24_onb7f")]
 position = Vector2(336, -28)
 
-[node name="sunflower3" parent="Node2D2/Node2D13" instance=ExtResource("34_gyukw")]
+[node name="sunflower3" parent="Node2D2/Node2D13" instance=ExtResource("24_onb7f")]
 position = Vector2(353, -27)
 
-[node name="sunflower4" parent="Node2D2/Node2D13" instance=ExtResource("34_gyukw")]
+[node name="sunflower4" parent="Node2D2/Node2D13" instance=ExtResource("24_onb7f")]
 position = Vector2(368, -30)
 
 [node name="Node2D14" type="Node2D" parent="Node2D2"]
 
-[node name="rose" parent="Node2D2/Node2D14" instance=ExtResource("33_up1iy")]
+[node name="rose" parent="Node2D2/Node2D14" instance=ExtResource("25_4gycf")]
 position = Vector2(4, 108)
 
-[node name="rose2" parent="Node2D2/Node2D14" instance=ExtResource("33_up1iy")]
+[node name="rose2" parent="Node2D2/Node2D14" instance=ExtResource("25_4gycf")]
 position = Vector2(22, 66)
 
-[node name="rose3" parent="Node2D2/Node2D14" instance=ExtResource("33_up1iy")]
+[node name="rose3" parent="Node2D2/Node2D14" instance=ExtResource("25_4gycf")]
 position = Vector2(337, -80)
 
-[node name="rose4" parent="Node2D2/Node2D14" instance=ExtResource("33_up1iy")]
+[node name="rose4" parent="Node2D2/Node2D14" instance=ExtResource("25_4gycf")]
 position = Vector2(338, -63)
 
-[node name="rose5" parent="Node2D2/Node2D14" instance=ExtResource("33_up1iy")]
+[node name="rose5" parent="Node2D2/Node2D14" instance=ExtResource("25_4gycf")]
 position = Vector2(337, -50)
 
-[node name="rose6" parent="Node2D2/Node2D14" instance=ExtResource("33_up1iy")]
+[node name="rose6" parent="Node2D2/Node2D14" instance=ExtResource("25_4gycf")]
 position = Vector2(354, -80)
 
-[node name="rose7" parent="Node2D2/Node2D14" instance=ExtResource("33_up1iy")]
+[node name="rose7" parent="Node2D2/Node2D14" instance=ExtResource("25_4gycf")]
 position = Vector2(355, -63)
 
-[node name="rose8" parent="Node2D2/Node2D14" instance=ExtResource("33_up1iy")]
+[node name="rose8" parent="Node2D2/Node2D14" instance=ExtResource("25_4gycf")]
 position = Vector2(353, -49)
 
 [node name="Node2D15" type="Node2D" parent="Node2D2"]
 
-[node name="alien" parent="Node2D2/Node2D15" instance=ExtResource("35_kjb27")]
+[node name="alien" parent="Node2D2/Node2D15" instance=ExtResource("26_j8uf0")]
 position = Vector2(79, -132)
 
-[node name="alien2" parent="Node2D2/Node2D15" instance=ExtResource("35_kjb27")]
+[node name="alien2" parent="Node2D2/Node2D15" instance=ExtResource("26_j8uf0")]
 position = Vector2(-267, -168)
 
-[node name="alien3" parent="Node2D2/Node2D15" instance=ExtResource("35_kjb27")]
+[node name="alien3" parent="Node2D2/Node2D15" instance=ExtResource("26_j8uf0")]
 position = Vector2(322, -15)
 
-[node name="alien4" parent="Node2D2/Node2D15" instance=ExtResource("35_kjb27")]
+[node name="alien4" parent="Node2D2/Node2D15" instance=ExtResource("26_j8uf0")]
 position = Vector2(313, -135)
 
-[node name="alien5" parent="Node2D2/Node2D15" instance=ExtResource("35_kjb27")]
+[node name="alien5" parent="Node2D2/Node2D15" instance=ExtResource("26_j8uf0")]
 position = Vector2(420, -170)
 
-[node name="alien6" parent="Node2D2/Node2D15" instance=ExtResource("35_kjb27")]
+[node name="alien6" parent="Node2D2/Node2D15" instance=ExtResource("26_j8uf0")]
 position = Vector2(447, -55)
 
-[node name="alien7" parent="Node2D2/Node2D15" instance=ExtResource("35_kjb27")]
+[node name="alien7" parent="Node2D2/Node2D15" instance=ExtResource("26_j8uf0")]
 position = Vector2(1091, -233)
 
-[node name="alien8" parent="Node2D2/Node2D15" instance=ExtResource("35_kjb27")]
+[node name="alien8" parent="Node2D2/Node2D15" instance=ExtResource("26_j8uf0")]
 position = Vector2(775, -386)
 
-[node name="alien9" parent="Node2D2/Node2D15" instance=ExtResource("35_kjb27")]
+[node name="alien9" parent="Node2D2/Node2D15" instance=ExtResource("26_j8uf0")]
 position = Vector2(983, -320)
 
-[node name="alien10" parent="Node2D2/Node2D15" instance=ExtResource("35_kjb27")]
+[node name="alien10" parent="Node2D2/Node2D15" instance=ExtResource("26_j8uf0")]
 position = Vector2(-1163, 204)
 
-[node name="alien11" parent="Node2D2/Node2D15" instance=ExtResource("35_kjb27")]
+[node name="alien11" parent="Node2D2/Node2D15" instance=ExtResource("26_j8uf0")]
 position = Vector2(-1018, 130)
 
-[node name="alien12" parent="Node2D2/Node2D15" instance=ExtResource("35_kjb27")]
+[node name="alien12" parent="Node2D2/Node2D15" instance=ExtResource("26_j8uf0")]
 position = Vector2(-105, 400)
 
-[node name="alien13" parent="Node2D2/Node2D15" instance=ExtResource("35_kjb27")]
+[node name="alien13" parent="Node2D2/Node2D15" instance=ExtResource("26_j8uf0")]
 position = Vector2(-207, 211)
 
-[node name="alien14" parent="Node2D2/Node2D15" instance=ExtResource("35_kjb27")]
+[node name="alien14" parent="Node2D2/Node2D15" instance=ExtResource("26_j8uf0")]
 position = Vector2(-148, 320)
 
-[node name="alien15" parent="Node2D2/Node2D15" instance=ExtResource("35_kjb27")]
+[node name="alien15" parent="Node2D2/Node2D15" instance=ExtResource("26_j8uf0")]
 position = Vector2(59, 397)
 
-[node name="alien16" parent="Node2D2/Node2D15" instance=ExtResource("35_kjb27")]
+[node name="alien16" parent="Node2D2/Node2D15" instance=ExtResource("26_j8uf0")]
 position = Vector2(544, 143)
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -1162,14 +1131,14 @@ tile_set = SubResource("TileSet_gyukw")
 format = 2
 layer_0/tile_data = PackedInt32Array(-196613, 131079, 0, -131077, 131079, 1, -65541, 131079, 1, -5, 131079, 1, 65531, 131079, 1, 131067, 131079, 1, 196603, 131079, 2, 196601, 65543, 2, 196602, 65543, 2, 196599, 7, 2, 196600, 65543, 2, 131063, 7, 1, 65527, 7, 1, -9, 7, 1, -65545, 7, 1, -131081, 7, 1, -196617, 7, 0, -196614, 65543, 3, -196616, 131079, 3, 720902, 7, 2, 720903, 65543, 2, 720904, 65543, 2, 720905, 65543, 2, 720906, 131079, 2, 655370, 131079, 1, 589834, 131079, 1, 524298, 131079, 1, 458762, 131079, 1, 393226, 131079, 1, 655366, 131079, 1, 589830, 131079, 1, 524294, 131079, 1, 458758, 131079, 1, 393222, 131079, 1, 327686, 7, 0, 327690, 131079, 0, 327687, 131079, 3, 327689, 65543, 3, 130985, 7, 0, 196521, 7, 1, 262057, 7, 1, 327593, 7, 1, 393129, 7, 1, 458665, 7, 1, 524201, 7, 1, 589737, 7, 1, 655273, 7, 1, 720809, 7, 1, 786345, 7, 1, 851881, 7, 1, 917417, 7, 1, 982953, 7, 1, 1048489, 7, 1, 1114025, 7, 1, 1179561, 7, 1, 1245097, 7, 1, 1310633, 7, 1, 1376169, 7, 1, 1441705, 7, 1, 1507241, 7, 1, 1572777, 7, 1, 1638313, 7, 1, 1703849, 7, 1, 1769385, 7, 1, 1834921, 7, 1, 1900457, 7, 1, 1965993, 7, 1, 2031529, 7, 1, 2097065, 7, 1, 2162601, 7, 1, 2228137, 7, 2, 2228138, 65543, 2, 2228139, 65543, 2, 2228140, 65543, 2, 2228141, 65543, 2, 2228142, 65543, 2, 2228143, 65543, 2, 2228144, 65543, 2, 2228145, 65543, 2, 2228146, 65543, 2, 2228147, 65543, 2, 2228148, 65543, 2, 2228149, 65543, 2, 2228150, 65543, 2, 2228151, 65543, 2, 2228152, 65543, 2, 2228153, 65543, 2, 2228154, 65543, 2, 2228155, 65543, 2, 2228156, 65543, 2, 2228157, 65543, 2, 2228158, 65543, 2, 2228159, 65543, 2, 2228160, 65543, 2, 2228161, 65543, 2, 2228162, 65543, 2, 2228163, 65543, 2, 2228164, 65543, 2, 2228165, 65543, 2, 2228166, 65543, 2, 2228167, 65543, 2, 2228168, 65543, 2, 2228169, 65543, 2, 2228170, 65543, 2, 2228171, 65543, 2, 2228172, 65543, 2, 2228173, 65543, 2, 2228174, 65543, 2, 2228175, 65543, 2, 2228176, 65543, 2, 2228177, 65543, 2, 2228178, 65543, 2, 2228179, 65543, 2, 2228180, 65543, 2, 2228181, 65543, 2, 2228182, 65543, 2, 2228183, 65543, 2, 2228184, 65543, 2, 2228185, 65543, 2, 2228186, 65543, 2, 2228187, 65543, 2, 2228188, 65543, 2, 2228189, 65543, 2, 2228190, 65543, 2, 2228191, 65543, 2, 2228192, 65543, 2, 2228193, 65543, 2, 2228194, 65543, 2, 2228195, 65543, 2, 2228196, 65543, 2, 2228197, 65543, 2, 2228198, 65543, 2, 2228199, 65543, 2, 2228200, 65543, 2, 2228201, 65543, 2, 2228202, 65543, 2, 2228203, 65543, 2, 2228204, 65543, 2, 2228205, 65543, 2, 2228206, 65543, 2, 2228207, 65543, 2, 2228208, 65543, 2, 2228209, 65543, 2, 2228210, 65543, 2, 2228211, 65543, 2, 2228212, 65543, 2, 2228213, 65543, 2, 2228214, 65543, 2, 2228215, 65543, 2, 2228216, 65543, 2, 2228217, 65543, 2, 2228218, 65543, 2, 2228219, 65543, 2, 2228220, 65543, 2, 2228221, 65543, 2, 2228222, 65543, 2, 2228223, 65543, 2, 2162688, 65543, 2, 2162689, 65543, 2, 2162690, 65543, 2, 2162691, 65543, 2, 2162692, 65543, 2, 2162693, 65543, 2, 2162694, 65543, 2, 2162695, 65543, 2, 2162696, 65543, 2, 2162697, 65543, 2, 2162698, 65543, 2, 2162699, 65543, 2, 2162700, 65543, 2, 2162701, 65543, 2, 2162702, 65543, 2, 2162703, 65543, 2, 2162704, 65543, 2, 2162705, 65543, 2, 2162706, 65543, 2, 2162707, 65543, 2, 2162708, 65543, 2, 2162709, 65543, 2, 2162710, 65543, 2, 2162711, 65543, 2, 2162712, 65543, 2, 2162713, 65543, 2, 2162714, 65543, 2, 2162715, 65543, 2, 2162716, 65543, 2, 2162717, 65543, 2, 2162718, 65543, 2, 2162719, 65543, 2, 2162720, 65543, 2, 2162721, 65543, 2, 2162722, 65543, 2, 2162723, 65543, 2, 2162724, 65543, 2, 2162725, 65543, 2, 2162726, 65543, 2, 2162727, 65543, 2, 2162728, 65543, 2, 2162729, 65543, 2, 2162730, 65543, 2, 2162731, 65543, 2, 2162732, 65543, 2, 2162733, 65543, 2, 2162734, 65543, 2, 2162735, 65543, 2, 2162736, 65543, 2, 2162737, 65543, 2, 2162738, 65543, 2, 2162739, 65543, 2, 2162740, 65543, 2, 2162741, 65543, 2, 2162742, 65543, 2, 2162743, 65543, 2, 2162744, 65543, 2, 2162745, 65543, 2, 2162746, 65543, 2, 2162747, 65543, 2, 2162748, 65543, 2, 2162749, 65543, 2, 2162750, 65543, 2, 2162751, 65543, 2, 2162752, 65543, 2, 2162753, 65543, 2, 2162754, 65543, 2, 2162755, 65543, 2, 2162756, 65543, 2, 2162757, 65543, 2, 2162758, 65543, 2, 2162759, 65543, 2, 2162760, 65543, 2, 2162761, 131079, 2, 2097225, 131079, 1, 1376329, 131079, 1, 1441865, 131079, 1, 1507401, 131079, 1, 1572937, 131079, 1, 1638473, 131079, 1, 1704009, 131079, 1, 1769545, 131079, 1, 1835081, 131079, 1, 1900617, 131079, 1, 1966153, 131079, 1, 2031689, 131079, 1, -589751, 131079, 1, -524215, 131079, 1, -458679, 131079, 1, -393143, 131079, 1, -327607, 131079, 1, -262071, 131079, 1, -196535, 131079, 1, -130999, 131079, 1, -65463, 131079, 1, 73, 131079, 1, 65609, 131079, 1, 131145, 131079, 1, 196681, 131079, 1, 262217, 131079, 1, 327753, 131079, 1, 393289, 131079, 1, 458825, 131079, 1, 524361, 131079, 1, 589897, 131079, 1, 655433, 131079, 1, 720969, 131079, 1, 786505, 131079, 1, 852041, 131079, 1, 917577, 131079, 1, 983113, 131079, 1, 1048649, 131079, 1, 1114185, 131079, 1, 1179721, 131079, 1, 1245257, 131079, 1, 1310793, 131079, 1, -1769399, 131079, 1, -1703863, 131079, 1, -1638327, 131079, 1, -1572791, 131079, 1, -1507255, 131079, 1, -1441719, 131079, 2, -1376183, 131079, 1, -1310647, 131079, 1, -1245111, 131079, 1, -1179575, 131079, 1, -1114039, 131079, 1, -1048503, 131079, 1, -982967, 131079, 1, -917431, 131079, 1, -851895, 131079, 1, -786359, 131079, 1, -720823, 131079, 1, -655287, 131079, 1, -1834935, 131079, 0, -1834971, 65543, 2, -1834970, 65543, 2, -1834969, 65543, 2, -1834968, 65543, 2, -1834967, 65543, 2, -1834966, 65543, 2, -1834965, 65543, 2, -1834964, 65543, 2, -1834963, 65543, 2, -1834962, 65543, 2, -1834961, 65543, 2, -1834960, 65543, 2, -1834959, 65543, 2, -1834958, 65543, 2, -1834957, 65543, 2, -1834956, 65543, 2, -1834955, 65543, 2, -1834954, 65543, 2, -1834953, 65543, 2, -1834952, 65543, 2, -1834951, 65543, 2, -1834950, 65543, 2, -1834949, 65543, 2, -1834948, 65543, 2, -1834947, 65543, 2, -1834946, 65543, 2, -1834945, 65543, 2, -1834944, 65543, 2, -1834943, 65543, 2, -1834942, 65543, 2, -1834941, 65543, 2, -1834940, 65543, 2, -1834939, 65543, 2, -1834938, 65543, 2, -1834937, 65543, 2, -1834936, 65543, 2, -1769483, 65543, 2, -1769482, 65543, 2, -1769481, 65543, 2, -1769480, 65543, 2, -1769479, 65543, 2, -1769478, 65543, 2, -1769477, 65543, 2, -1769476, 65543, 2, -1769475, 65543, 2, -1769474, 65543, 2, -1769473, 65543, 2, -1835008, 65543, 2, -1835007, 65543, 2, -1835006, 65543, 2, -1835005, 65543, 2, -1835004, 65543, 2, -1835003, 65543, 2, -1835002, 65543, 2, -1835001, 65543, 2, -1835000, 65543, 2, -1834999, 65543, 2, -1834998, 65543, 2, -1834997, 65543, 2, -1834996, 65543, 2, -1834995, 65543, 2, -1834994, 65543, 2, -1834993, 65543, 2, -1834992, 65543, 2, -1834991, 65543, 2, -1834990, 65543, 2, -1834989, 65543, 2, -1834988, 65543, 2, -1834987, 65543, 2, -1834986, 65543, 2, -1834985, 65543, 2, -1834984, 65543, 2, -1834983, 65543, 2, -1834982, 65543, 2, -1834981, 65543, 2, -1834980, 65543, 2, -1834979, 65543, 2, -1834978, 65543, 2, -1834977, 65543, 2, -1834976, 65543, 2, -1834975, 65543, 2, -1834974, 65543, 2, -1834973, 65543, 2, -1834972, 65543, 2, -1769547, 65543, 2, -1769546, 65543, 2, -1769545, 65543, 2, -1769544, 65543, 2, -1769543, 65543, 2, -1769542, 65543, 2, -1769541, 65543, 2, -1769540, 65543, 2, -1769539, 65543, 2, -1769538, 65543, 2, -1769537, 65543, 2, -1769536, 65543, 2, -1769535, 65543, 2, -1769534, 65543, 2, -1769533, 65543, 2, -1769532, 65543, 2, -1769531, 65543, 2, -1769530, 65543, 2, -1769529, 65543, 2, -1769528, 65543, 2, -1769527, 65543, 2, -1769526, 65543, 2, -1769525, 65543, 2, -1769524, 65543, 2, -1769523, 65543, 2, -1769522, 65543, 2, -1769521, 65543, 2, -1769520, 65543, 2, -1769519, 65543, 2, -1769518, 65543, 2, -1769517, 65543, 2, -1769516, 65543, 2, -1769515, 65543, 2, -1769514, 65543, 2, -1769513, 65543, 2, -1769512, 65543, 2, -1769511, 65543, 2, -1769510, 65543, 2, -1769509, 65543, 2, -1769508, 65543, 2, -1769507, 65543, 2, -1769506, 65543, 2, -1769505, 65543, 2, -1769504, 65543, 2, -1769503, 65543, 2, -1769502, 65543, 2, -1769501, 65543, 2, -1769500, 65543, 2, -1769499, 65543, 2, -1769498, 65543, 2, -1769497, 65543, 2, -1769496, 65543, 2, -1769495, 65543, 2, -1769494, 65543, 2, -1769493, 65543, 2, -1769492, 65543, 2, -1769491, 65543, 2, -1769490, 65543, 2, -1769489, 65543, 2, -1769488, 65543, 2, -1769487, 65543, 2, -1769486, 65543, 2, -1769485, 65543, 2, -1769484, 65543, 2, -1769550, 65543, 2, -1769549, 65543, 2, -1769548, 65543, 2, -1769551, 7, 0, -1704015, 7, 1, -1638479, 7, 1, -1572943, 7, 1, -1507407, 7, 1, -1441871, 7, 1, -1376335, 7, 1, -1310799, 7, 1, -1245263, 7, 1, -1179727, 7, 1, -1114191, 7, 1, -1048655, 7, 1, -983119, 7, 1, -917583, 7, 1, -852047, 7, 1, -786511, 7, 1, -720975, 7, 1, -655439, 7, 1, -589903, 7, 1, -524367, 7, 1, -458831, 7, 1, -393295, 7, 1, -327759, 7, 1, -262223, 7, 1, -196687, 7, 1, -131151, 7, 1, -65615, 7, 1, -79, 7, 1, 65457, 7, 1, 130993, 131079, 2, 130986, 65543, 2, 130987, 65543, 2, 130988, 65543, 2, 130989, 65543, 2, 130990, 65543, 2, 130991, 65543, 2, 130992, 65543, 2, 196606, 7, 0, 262142, 7, 1, 327678, 7, 1, 393214, 7, 1, 458750, 7, 1, 196610, 7, 1, 262146, 7, 1, 327682, 7, 1, 393218, 7, 1, 458754, 131079, 2, 524286, 7, 2, 524287, 65543, 2, 458752, 65543, 2, 458753, 65543, 2, 131074, 131079, 0, 131073, 65543, 3, 196607, 131079, 3, -1441720, 65543, 2, -1441721, 65543, 2, -1441722, 65543, 2, -1441723, 65543, 2, -1441724, 65543, 2, -1441725, 65543, 2, -1441726, 65543, 2, -1441727, 65543, 2, -1441733, 65543, 2, -1441734, 65543, 2, -1441735, 65543, 2, -1441736, 65543, 2, -1441737, 65543, 2, -1441738, 65543, 2, -1441739, 65543, 2, -1441740, 65543, 2, -1441741, 65543, 2, -1441742, 7, 2, -1507278, 7, 1, -1572814, 7, 1, -1638350, 7, 1, -1703886, 7, 1, -1769422, 7, 1, -1441732, 131079, 3, -1441728, 65543, 2, -1441729, 65543, 2, -1441730, 65543, 3, -1769410, 131079, 1, -1703874, 131079, 1, -1638338, 131079, 4, -1769412, 131079, 1, -1703876, 65543, 4, -1769417, 131079, 1, -1703881, 131079, 1, -1638345, 131079, 1, -1507261, 131079, 1, -1769405, 131079, 1, -1703869, 131079, 1, -1769403, 131079, 1, -1703867, 131079, 1, -1507259, 131079, 1, -1507257, 131079, 1, -1507263, 131079, 1, -1769407, 131079, 1, -1703871, 131079, 1, -1769401, 131079, 1, -1703865, 131079, 1)
 
-[node name="player" parent="." instance=ExtResource("1_drhme")]
+[node name="player" parent="." instance=ExtResource("27_lndjb")]
 position = Vector2(12, -16)
 collision_layer = 2
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 zoom = Vector2(4, 4)
 
-[node name="Inventory" parent="player" instance=ExtResource("4_cxisf")]
+[node name="Inventory" parent="player" instance=ExtResource("28_6otw7")]
 position = Vector2(84, -31)
 
 [node name="Node" type="Node" parent="player/Inventory"]
@@ -1280,7 +1249,6 @@ offset_left = -72.0
 offset_top = 56.0
 offset_right = -32.0
 offset_bottom = 79.0
-theme_override_fonts/font = ExtResource("5_su6sf")
 theme_override_font_sizes/font_size = 8
 text = "0"
 
@@ -1293,7 +1261,6 @@ offset_right = -58.0
 offset_bottom = 48.4019
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("5_su6sf")
 theme_override_font_sizes/font_size = 8
 text = "0"
 
@@ -1302,7 +1269,6 @@ offset_left = -68.0
 offset_top = 30.0
 offset_right = -52.0
 offset_bottom = 65.0
-theme_override_fonts/font = ExtResource("5_su6sf")
 theme_override_font_sizes/font_size = 8
 text = "0
 "
@@ -1312,7 +1278,6 @@ offset_left = -126.0
 offset_top = 28.0
 offset_right = -118.0
 offset_bottom = 36.0
-theme_override_fonts/font = ExtResource("5_su6sf")
 theme_override_font_sizes/font_size = 8
 text = "0"
 
@@ -1321,14 +1286,13 @@ offset_left = -68.0
 offset_top = 65.0
 offset_right = -28.0
 offset_bottom = 88.0
-theme_override_fonts/font = ExtResource("5_su6sf")
 theme_override_font_sizes/font_size = 8
 text = "0"
 justification_flags = 131
 
 [node name="Coin" type="Sprite2D" parent="player/Inventory/Node2D2"]
 position = Vector2(-74, 69)
-texture = ExtResource("17_x33gs")
+texture = ExtResource("29_hfry4")
 region_enabled = true
 region_rect = Rect2(2.51852, 2.14815, 11.4815, 13.037)
 
@@ -1337,7 +1301,6 @@ offset_left = -105.0
 offset_top = 62.0
 offset_right = 132.0
 offset_bottom = 85.0
-theme_override_fonts/font = ExtResource("20_2paaw")
 theme_override_font_sizes/font_size = 8
 text = "you 
 collected                                coin"
@@ -1347,7 +1310,6 @@ offset_left = -43.0
 offset_top = 10.0
 offset_right = -3.0
 offset_bottom = 33.0
-theme_override_fonts/font = ExtResource("5_su6sf")
 theme_override_font_sizes/font_size = 8
 text = "0"
 
@@ -1356,7 +1318,6 @@ offset_left = -38.0
 offset_top = 56.0
 offset_right = 2.0
 offset_bottom = 79.0
-theme_override_fonts/font = ExtResource("5_su6sf")
 theme_override_font_sizes/font_size = 8
 text = "0"
 
@@ -1365,7 +1326,6 @@ offset_left = -145.0
 offset_top = 179.0
 offset_right = -105.0
 offset_bottom = 202.0
-theme_override_fonts/font = ExtResource("5_su6sf")
 theme_override_font_sizes/font_size = 8
 text = "0"
 
@@ -1374,7 +1334,6 @@ offset_left = -43.0
 offset_top = -11.0
 offset_right = -3.0
 offset_bottom = 12.0
-theme_override_fonts/font = ExtResource("5_su6sf")
 theme_override_font_sizes/font_size = 8
 text = "0"
 
@@ -1386,7 +1345,6 @@ offset_left = -42.0
 offset_top = 31.0
 offset_right = -2.0
 offset_bottom = 54.0
-theme_override_fonts/font = ExtResource("5_su6sf")
 theme_override_font_sizes/font_size = 8
 text = "0"
 
@@ -1399,7 +1357,6 @@ offset_right = -115.0
 offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("5_su6sf")
 theme_override_font_sizes/font_size = 8
 text = "0"
 
@@ -1408,7 +1365,6 @@ offset_left = -72.0
 offset_top = 8.0
 offset_right = -64.0
 offset_bottom = 27.0
-theme_override_fonts/font = ExtResource("5_su6sf")
 theme_override_font_sizes/font_size = 8
 text = "0
 "
@@ -1418,7 +1374,6 @@ offset_left = -121.0
 offset_top = 47.0
 offset_right = -113.0
 offset_bottom = 70.0
-theme_override_fonts/font = ExtResource("5_su6sf")
 theme_override_font_sizes/font_size = 8
 text = "0"
 
@@ -1427,13 +1382,12 @@ offset_left = 63.0
 offset_top = -89.0
 offset_right = 103.0
 offset_bottom = -66.0
-theme_override_fonts/font = ExtResource("5_su6sf")
 theme_override_font_sizes/font_size = 8
 text = "0"
 
 [node name="Coin" type="Sprite2D" parent="player/Inventory/Node2D2/Node2D2"]
 position = Vector2(119, 12.5)
-texture = ExtResource("17_x33gs")
+texture = ExtResource("29_hfry4")
 region_enabled = true
 region_rect = Rect2(2.51852, 2.14815, 11.4815, 13.037)
 
@@ -1442,7 +1396,6 @@ offset_left = 105.0
 offset_top = -55.0
 offset_right = 342.0
 offset_bottom = -32.0
-theme_override_fonts/font = ExtResource("20_2paaw")
 theme_override_font_sizes/font_size = 8
 text = "you 
 collected                                coin"
@@ -1452,7 +1405,6 @@ offset_left = -98.0
 offset_top = 7.0
 offset_right = -90.0
 offset_bottom = 15.0
-theme_override_fonts/font = ExtResource("5_su6sf")
 theme_override_font_sizes/font_size = 8
 text = "0"
 
@@ -1461,7 +1413,6 @@ offset_left = -123.0
 offset_top = 9.0
 offset_right = -83.0
 offset_bottom = 32.0
-theme_override_fonts/font = ExtResource("5_su6sf")
 theme_override_font_sizes/font_size = 8
 text = "0"
 
@@ -1470,7 +1421,6 @@ offset_left = -98.0
 offset_top = -14.0
 offset_right = -90.0
 offset_bottom = 9.0
-theme_override_fonts/font = ExtResource("5_su6sf")
 theme_override_font_sizes/font_size = 8
 text = "0"
 
@@ -1479,7 +1429,6 @@ offset_left = -73.0
 offset_top = -14.0
 offset_right = -65.0
 offset_bottom = 9.0
-theme_override_fonts/font = ExtResource("5_su6sf")
 theme_override_font_sizes/font_size = 8
 text = "0"
 
@@ -1488,10 +1437,9 @@ offset_left = -142.0
 offset_top = -78.0
 offset_right = -94.0
 offset_bottom = -55.0
-theme_override_fonts/font = ExtResource("5_su6sf")
 theme_override_font_sizes/font_size = 8
 text = "kkk"
-script = ExtResource("42_4irf7")
+script = ExtResource("30_rsca1")
 
 [node name="Timer2" type="Timer" parent="player"]
 wait_time = 420.0
@@ -1503,7 +1451,6 @@ offset_left = -102.0
 offset_top = -62.0
 offset_right = 103.0
 offset_bottom = -21.0
-theme_override_fonts/font = ExtResource("5_su6sf")
 theme_override_font_sizes/font_size = 8
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -1525,12 +1472,10 @@ offset_left = 16.0
 offset_top = -80.0
 offset_right = 137.0
 offset_bottom = -57.0
-theme_override_fonts/font = ExtResource("5_su6sf")
 theme_override_font_sizes/font_size = 8
 text = "collect 2000 coin"
 
 [connection signal="input_event" from="player/Inventory/Node2D/Area2D" to="Node/game_manger" method="_on_area_2d_input_event"]
-[connection signal="input_event" from="player/Inventory/Node2D/Area2D" to="Node/tgzsyajuxkihnzdjdzkidk" method="_on_area_2d_input_event"]
 [connection signal="input_event" from="player/Inventory/Node2D/Area2D2" to="Node/game_manger" method="_on_area_2d_2_input_event"]
 [connection signal="input_event" from="player/Inventory/Node2D/Area2D3" to="Node/game_manger" method="_on_area_2d_3_input_event"]
 [connection signal="input_event" from="player/Inventory/Node2D/Area2D4" to="Node/game_manger" method="_on_area_2d_4_input_event"]
