@@ -717,12 +717,12 @@ _data = {
 radius = 15.5874
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v4iqv"]
-atlas = ExtResource("4_2fvbb")
-region = Rect2(0, 384, 48, 48)
+atlas = ExtResource("4_oh5ij")
+region = Rect2(0, 96, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_42h83"]
-atlas = ExtResource("4_2fvbb")
-region = Rect2(48, 384, 48, 48)
+atlas = ExtResource("4_oh5ij")
+region = Rect2(48, 96, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oh5ij"]
 atlas = ExtResource("5_ml7e8")
@@ -773,12 +773,12 @@ atlas = ExtResource("5_ml7e8")
 region = Rect2(160, 160, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iuf2t"]
-atlas = ExtResource("4_2fvbb")
-region = Rect2(0, 336, 48, 48)
+atlas = ExtResource("4_oh5ij")
+region = Rect2(0, 48, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jrjdb"]
-atlas = ExtResource("4_2fvbb")
-region = Rect2(48, 336, 48, 48)
+atlas = ExtResource("4_oh5ij")
+region = Rect2(48, 48, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kk4ol"]
 atlas = ExtResource("5_ml7e8")
@@ -853,12 +853,12 @@ atlas = ExtResource("5_ml7e8")
 region = Rect2(160, 128, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6lu7o"]
-atlas = ExtResource("4_2fvbb")
-region = Rect2(0, 288, 48, 48)
+atlas = ExtResource("4_oh5ij")
+region = Rect2(0, 0, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8rkx0"]
-atlas = ExtResource("4_2fvbb")
-region = Rect2(48, 288, 48, 48)
+atlas = ExtResource("4_oh5ij")
+region = Rect2(48, 0, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mtygy"]
 atlas = ExtResource("5_ml7e8")
@@ -1111,7 +1111,7 @@ shape = SubResource("CircleShape2D_ct4mp")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-1, 2)
 sprite_frames = SubResource("SpriteFrames_4qnqm")
-animation = &"front_attack"
+animation = &"side_attack"
 autoplay = "front_idle"
 
 [node name="ProgressBar" parent="." instance=ExtResource("6_ihjo1")]
